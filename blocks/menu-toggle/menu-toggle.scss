@@ -1,0 +1,27 @@
+#menu-toggle {
+  display: none;
+}
+
+@media all and (max-width: 1200px) {
+  #menu-toggle:checked + .header__menu-btn-container .header__menu-btn::before {
+    transform:  translateY(10px) rotate(45deg);
+  }
+
+  #menu-toggle:checked + .header__menu-btn-container .header__menu-btn {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked + .header__menu-btn-container .header__menu-btn::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+@media all and (max-width: 425px) {
+  #menu-toggle:checked + .header__menu-btn-container .header__menu-btn::before {
+    transform:  translateY(8px) rotate(45deg);
+  }
+
+  #menu-toggle:checked + .header__menu-btn-container .header__menu-btn::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

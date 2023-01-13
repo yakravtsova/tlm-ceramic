@@ -1,0 +1,50 @@
+.button-yellow {
+  margin: 0;
+  padding: 3px 45px 0;
+  border: none;
+  background-color: #f3cd2b;
+  font-size: 16px;
+/*  width: 163px;*/
+  height: 58px;
+  border-radius: 60px;
+
+  &_place_first-line {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1919px) {
+  .button-yellow {
+    font-size: 14px;
+    height: 50px;
+    padding: 3px 35px 0;
+  }
+}
+
+@media all and (max-width: 1536px) {
+  .button-yellow {
+    height: 39px;
+    padding: 0 16px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .button-yellow {
+    display: none;
+    width: 190px;
+
+    &_place_first-line {
+      display: block;
+    }
+  }
+}
+
+@media all and (max-width: 750px) {
+  .button-yellow {
+    display: block;
+
+    &_place_first-line {
+      display: none;
+    }
+  }
+}

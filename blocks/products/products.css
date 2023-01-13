@@ -1,0 +1,26 @@
+.products {
+  box-sizing: border-box;
+  padding: 40px 73px 0 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+.products__title {
+  margin: 0 0 0 108px;
+  width: 1060px;
+  font-size: 37px;
+  line-height: 47px;
+  letter-spacing: 0.03em;
+}
+.products__background-text {
+  font-size: 107px;
+  font-weight: bold;
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  letter-spacing: 0.05em;
+  color: #f6f6f6;
+}
+/*# sourceMappingURL=products.css.map */
