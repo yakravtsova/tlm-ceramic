@@ -4,12 +4,18 @@
   border: none;
   background-color: #f3cd2b;
   font-size: 16px;
-/*  width: 163px;*/
+  letter-spacing: .05em;
   height: 58px;
   border-radius: 60px;
 
-  &_place_first-line {
-    display: none;
+  &_place {
+    &_first-line {
+      display: none;
+    }
+
+    &_product {
+      margin-top: auto;
+    }
   }
 }
 
@@ -33,8 +39,14 @@
     display: none;
     width: 190px;
 
-    &_place_first-line {
-      display: block;
+    &_place {
+      &_first-line {
+        display: block;
+      }
+
+      &_product {
+        display: block;
+      }
     }
   }
 }
