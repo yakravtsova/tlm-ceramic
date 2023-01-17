@@ -130,10 +130,43 @@
   </header>
   <main class="main">
     <section class="products">
-      <p class="products__background-text">TLM Ceramic.</p>
-      <img class="products__background-pic" src="./images/bg_grey_0.jpg" alt="Элемент логотипа компании" />
+      <p class="background__text">TLM Ceramic.</p>
+      <img class="background__pic" src="./images/bg_grey_0.jpg" alt="Элемент логотипа компании" />
       <h1 class="products__title">Производство и поставка жидкой теплоизоляции, огнезащитных, фасадных и интерьерных красок</h1>
-      <ul class="products__list">
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <h2 class="splide__slide-title">Жидкая теплоизоляция TLM&nbsp;Ceramic</h2>
+              <img class="splide__slide-img" src="./images/can-of-paint.png" />
+              <p class="splide__slide-description">
+                Жидкая теплоизоляция «TLM Ceramic» обладает целым рядом свойств, которые успешно применяются как на производстве,
+                так и в быту. Будучи нанесён на поверхность объекта с рабочей температурой до 230° снижает тепловое излучение с этого объекта.
+              </p>
+              <button class="button-yellow button-yellow_place_product">УЗНАТЬ БОЛЬШЕ</button>
+            </li>
+            <li class="splide__slide">
+              <h2 class="splide__slide-title">Огнезащитные краски</h2>
+              <img class="splide__slide-img" src="./images/can-of-paint.png" />
+              <p class="splide__slide-description">
+                Огнеупорная негорючая краска позволяет повысить предел огнестойкости металлоконструкций и
+                сохранить прочностные свойства материала под термическим воздействием огня.
+              </p>
+              <button class="button-yellow button-yellow_place_product">УЗНАТЬ БОЛЬШЕ</button>
+            </li>
+            <li class="splide__slide">
+              <h2 class="splide__slide-title">Фасадные краски</h2>
+              <img class="splide__slide-img" src="./images/can-of-paint.png" />
+              <p class="splide__slide-description">
+                Фасадные краски обладают целым рядом свойств, которые успешно применяются как на производстве,
+                так и в быту: сохраняют свой цвет и насыщенность в течение длительного времени, защищают фасад от коррозии, плесени и других погодных факторов.
+              </p>
+              <button class="button-yellow button-yellow_place_product">УЗНАТЬ БОЛЬШЕ</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <!--    <ul class="products__list">
         <li class="product">
           <h2 class="product__title">Жидкая теплоизоляция TLM&nbsp;Ceramic</h2>
           <img class="product__img" src="./images/can-of-paint.png" />
@@ -161,7 +194,24 @@
           </p>
           <button class="button-yellow button-yellow_place_product">УЗНАТЬ БОЛЬШЕ</button>
         </li>
-      </ul>
+      </ul>-->
+    </section>
+    <section class="about">
+      <h2 class="title">О компании</h2>
+      <p class="about__subtitle">
+        Научно производственное объединение, было основано в 1999 году для продвижения на рынке России и стран СНГ
+        новейших зарубежных и отечественных конверсионных разработок и технологий.
+      </p>
+      <p class="description">
+        Мы первая российская компания, которая представила рынку потребителей, сертифицировала и занималась распространением таких
+        жидких керамических теплоизоляционных материалов как THERMAL-COAT и TC CERAMIC HB производства «Capstone Manufacturing LLS» (США).
+      </p>
+      <p class="description">
+        На протяжении нескольких лет, в сотрудничестве с научно-исследовательскими институтами авиационной и химической промышленности России,
+        был разработан отечественный теплоизоляционный материал под торговой маркой TLM Ceramic (ТЛМ Керамик), который воплотил в себе
+        не только самые лучшие качества представителей серии жидких керамических изоляционных покрытий, но и по многим характеристикам превзошел их.
+      </p>
+      <p class="background__text background__text_place_about">Проверено временем.</p>
     </section>
   </main>
   <footer class="footer">
@@ -192,6 +242,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

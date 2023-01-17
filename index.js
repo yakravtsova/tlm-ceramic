@@ -3,6 +3,8 @@ const menuDropdown = document.querySelector('.header__menu-dropdown');
 const menuCheckbox = document.querySelector('.header__checkbox');
 const dropdownWrap = document.querySelector('.header__dropdown-wrap');
 
+new Splide( '.splide' ).mount();
+
 const handleMenuToggle = (open = true) => {
   let method = open ? 'toggle' : 'remove';
   menuDropdown.classList[method]('header__menu-dropdown_active');

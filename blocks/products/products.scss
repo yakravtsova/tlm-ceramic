@@ -14,38 +14,6 @@
     line-height: 47px;
     letter-spacing: 0.03em;
   }
-
-  &__background{
-    &-text {
-      font-size: 107px;
-      font-weight: bold;
-      position: absolute;
-      top: 110px;
-      left: -10px;
-      letter-spacing: 0.05em;
-      color: #f6f6f6;
-      z-index: -1;
-      margin: 0;
-    }
-
-    &-pic {
-      width: 1026px;
-      height: 1070px;
-      position: absolute;
-      right: 0;
-      top: 65px;
-      z-index: -1;
-    }
-  }
-
-  &__list {
-    margin: 70px 0 0 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
 }
 
 @media all and (max-width: 1919px) {
@@ -57,25 +25,6 @@
       letter-spacing: .05em;
       line-height: 40px;
       margin-left: 95px;
-    }
-
-    &__background {
-      &-text {
-        left: -3px;
-        top: 92px;
-        font-size: 90px;
-        letter-spacing: .04em;
-      }
-
-      &-pic {
-        width: 855px;
-        height: 892px;
-        top: 55px;
-      }
-    }
-
-    &__list {
-      margin-top: 59px;
     }
   }
 }
@@ -90,43 +39,11 @@
       margin-left: 75px;
       width: 700px;
     }
-
-    &__background {
-      &-text {
-        font-size: 70px;
-        letter-spacing: .06em;
-        top: 72px;
-      }
-
-      &-pic {
-        width: 685px;
-        height: 713px;
-        top: 40px;
-      }
-    }
-
-    &__list {
-      margin-top: 50px;
-    }
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .products {
-
-    &__background {
-      &-pic {
-        width: 411px;
-        height: 428px;
-      }
-    }
   }
 }
 
 @media all and (max-width: 1000px) {
   .products {
-  //  padding-left: 35px;
-  //  padding-right: 35px;
     padding-left: 15px;
     padding-right: 15px;
     align-self: center;
@@ -136,21 +53,6 @@
       line-height: 19px;
       width: 530px;
       margin-left: 40px;
-    }
-
-    &__background {
-      &-text {
-        font-size: 50px;
-        top: 40px;
-      }
-
-      &-pic {
-        top: 30px;
-      }
-    }
-
-    &__list {
-      margin-top: 30px;
     }
   }
 }
@@ -166,26 +68,6 @@
       font-size: 16px;
       width: auto;
       margin-left: 5px;
-    }
-
-    &__background {
-      &-text {
-        font-size: 45px;
-        top: 85px;
-        width: 350px;
-        letter-spacing: .03em;
-      }
-
-      &-pic {
-        width: 232px;
-        height: 241px;
-        bottom: 0;
-        top: auto;
-      }
-    }
-
-    &__list {
-      margin-top: 30px;
     }
   }
 }

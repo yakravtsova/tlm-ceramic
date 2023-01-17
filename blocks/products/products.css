@@ -14,33 +14,6 @@
   line-height: 47px;
   letter-spacing: 0.03em;
 }
-.products__background-text {
-  font-size: 107px;
-  font-weight: bold;
-  position: absolute;
-  top: 110px;
-  left: -10px;
-  letter-spacing: 0.05em;
-  color: #f6f6f6;
-  z-index: -1;
-  margin: 0;
-}
-.products__background-pic {
-  width: 1026px;
-  height: 1070px;
-  position: absolute;
-  right: 0;
-  top: 65px;
-  z-index: -1;
-}
-.products__list {
-  margin: 70px 0 0 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
 
 @media all and (max-width: 1919px) {
   .products {
@@ -52,20 +25,6 @@
     line-height: 40px;
     margin-left: 95px;
   }
-  .products__background-text {
-    left: -3px;
-    top: 92px;
-    font-size: 90px;
-    letter-spacing: 0.04em;
-  }
-  .products__background-pic {
-    width: 855px;
-    height: 892px;
-    top: 55px;
-  }
-  .products__list {
-    margin-top: 59px;
-  }
 }
 @media all and (max-width: 1536px) {
   .products {
@@ -76,25 +35,6 @@
     line-height: 32px;
     margin-left: 75px;
     width: 700px;
-  }
-  .products__background-text {
-    font-size: 70px;
-    letter-spacing: 0.06em;
-    top: 72px;
-  }
-  .products__background-pic {
-    width: 685px;
-    height: 713px;
-    top: 40px;
-  }
-  .products__list {
-    margin-top: 50px;
-  }
-}
-@media all and (max-width: 1200px) {
-  .products__background-pic {
-    width: 411px;
-    height: 428px;
   }
 }
 @media all and (max-width: 1000px) {
@@ -109,16 +49,6 @@
     width: 530px;
     margin-left: 40px;
   }
-  .products__background-text {
-    font-size: 50px;
-    top: 40px;
-  }
-  .products__background-pic {
-    top: 30px;
-  }
-  .products__list {
-    margin-top: 30px;
-  }
 }
 @media all and (max-width: 750px) {
   .products {
@@ -131,21 +61,6 @@
     font-size: 16px;
     width: auto;
     margin-left: 5px;
-  }
-  .products__background-text {
-    font-size: 45px;
-    top: 85px;
-    width: 350px;
-    letter-spacing: 0.03em;
-  }
-  .products__background-pic {
-    width: 232px;
-    height: 241px;
-    bottom: 0;
-    top: auto;
-  }
-  .products__list {
-    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=products.css.map */
