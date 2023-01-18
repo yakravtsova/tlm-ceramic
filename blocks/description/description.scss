@@ -1,17 +1,116 @@
 .description {
-  align-self: flex-end;
-  width: 634px;
-  margin: 0 0 46px;
+  box-sizing: border-box;
   font-size: 18px;
   letter-spacing: .05em;
-  line-height: 1.37;
+  width: 100%;
+  margin: 0;
+
+  &_place {
+    &_product {
+      line-height: 1.5;
+      margin-bottom: 30px;
+      height: 162px;
+      overflow: hidden;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 15px;
+        background: linear-gradient(180deg, transparent, #fff 60%);
+      }
+    }
+
+    &_about {
+      align-self: flex-end;
+      width: 634px;
+      margin-bottom: 46px;
+      line-height: 1.37;
+    }
+  }
 }
 
 @media all and (max-width: 1919px) {
   .description {
     font-size: 16px;
     letter-spacing: .01em;
-    width: 545px;
-    margin: 0 0 38px;
+
+    &_place {
+      &_product {
+        height: 144px;
+        margin-bottom: 27px;
+
+        &:after {
+          height: 11px;
+        }
+      }
+
+      &_about {
+        width: 545px;
+        margin-bottom: 38px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1536px) {
+  .description {
+    font-size: 14px;
+    letter-spacing: .065em;
+
+    &_place {
+      &_product {
+        height: 126px;
+        margin-bottom: 23px;
+
+        &:after {
+          height: 11px;
+        }
+      }
+
+      &_about {
+        font-size: 12px;
+        width: 440px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .description {
+    &_place {
+      &_about {
+        align-self: flex-start;
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .description {
+    font-size: 12px;
+
+    &_place {
+      &_product {
+        height: 108px;
+        margin-bottom: 20px;
+
+        &:after {
+          height: 10px;
+        }
+      }
+
+      &_about {
+        font-size: 14px;
+        letter-spacing: .05em;
+      }
+    }
   }
 }

@@ -16,3 +16,15 @@
     font-size: 40px;
   }
 }
+
+@media all and (max-width: 1200px) {
+  .title {
+    font-size: 27px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .title {
+    font-size: 22px;
+  }
+}

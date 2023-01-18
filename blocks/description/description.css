@@ -1,9 +1,30 @@
 .description {
-  align-self: flex-end;
-  width: 634px;
-  margin: 0 0 46px;
+  box-sizing: border-box;
   font-size: 18px;
   letter-spacing: 0.05em;
+  width: 100%;
+  margin: 0;
+}
+.description_place_product {
+  line-height: 1.5;
+  margin-bottom: 30px;
+  height: 162px;
+  overflow: hidden;
+  position: relative;
+}
+.description_place_product:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(180deg, transparent, #fff 60%);
+}
+.description_place_about {
+  align-self: flex-end;
+  width: 634px;
+  margin-bottom: 46px;
   line-height: 1.37;
 }
 
@@ -11,8 +32,59 @@
   .description {
     font-size: 16px;
     letter-spacing: 0.01em;
+  }
+  .description_place_product {
+    height: 144px;
+    margin-bottom: 27px;
+  }
+  .description_place_product:after {
+    height: 11px;
+  }
+  .description_place_about {
     width: 545px;
-    margin: 0 0 38px;
+    margin-bottom: 38px;
+  }
+}
+@media all and (max-width: 1536px) {
+  .description {
+    font-size: 14px;
+    letter-spacing: 0.065em;
+  }
+  .description_place_product {
+    height: 126px;
+    margin-bottom: 23px;
+  }
+  .description_place_product:after {
+    height: 11px;
+  }
+  .description_place_about {
+    font-size: 12px;
+    width: 440px;
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .description_place_about {
+    align-self: flex-start;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .description {
+    font-size: 12px;
+  }
+  .description_place_product {
+    height: 108px;
+    margin-bottom: 20px;
+  }
+  .description_place_product:after {
+    height: 10px;
+  }
+  .description_place_about {
+    font-size: 14px;
+    letter-spacing: 0.05em;
   }
 }
 /*# sourceMappingURL=description.css.map */

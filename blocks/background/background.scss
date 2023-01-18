@@ -85,6 +85,17 @@
 
 @media all and (max-width: 1200px) {
   .background {
+    &__text {
+      &_place {
+        &_about {
+          font-size: 70px;
+          letter-spacing: .03em;
+          width: 500px;
+          top: 181px;
+        }
+      }
+    }
+
     &__pic {
       width: 411px;
       height: 428px;
@@ -97,6 +108,14 @@
     &__text {
       font-size: 50px;
       top: 40px;
+
+      &_place {
+        &_about {
+          font-size: 70px;
+          top: 181px;
+          left: -12px;
+        }
+      }
     }
 
     &__pic {
@@ -110,8 +129,16 @@
     &__text {
       font-size: 45px;
       top: 85px;
-      width: 350px;
+      width: 290px;
       letter-spacing: .03em;
+
+      &_place {
+        &_about {
+          letter-spacing: .07em;
+          position: static;
+          margin: 24px -5px 34px;
+        }
+      }
     }
 
     &__pic {

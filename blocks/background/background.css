@@ -64,6 +64,12 @@
   }
 }
 @media all and (max-width: 1200px) {
+  .background__text_place_about {
+    font-size: 70px;
+    letter-spacing: 0.03em;
+    width: 500px;
+    top: 181px;
+  }
   .background__pic {
     width: 411px;
     height: 428px;
@@ -74,6 +80,11 @@
     font-size: 50px;
     top: 40px;
   }
+  .background__text_place_about {
+    font-size: 70px;
+    top: 181px;
+    left: -12px;
+  }
   .background__pic {
     top: 30px;
   }
@@ -82,8 +93,13 @@
   .background__text {
     font-size: 45px;
     top: 85px;
-    width: 350px;
+    width: 290px;
     letter-spacing: 0.03em;
+  }
+  .background__text_place_about {
+    letter-spacing: 0.07em;
+    position: static;
+    margin: 24px -5px 34px;
   }
   .background__pic {
     width: 232px;
