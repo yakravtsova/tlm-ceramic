@@ -1,0 +1,42 @@
+.member {
+  width: 433px !important;
+  margin: 0 72px 0 0;
+
+
+  &__name {
+    font-size: 26px;
+    letter-spacing: .05em;
+    margin: 16px 0 0;
+  }
+
+  &__post {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    letter-spacing: .05em;
+  }
+}
+
+@media all and (max-width: 1919px) {
+  .member {
+    width: 361px !important;
+    margin-right: 77px;
+
+    &__photo {
+      width: 361px;
+      height: 496px;
+    }
+
+    &__name {
+      font-size: 22px;
+      letter-spacing: .02em;
+      margin-top: 14px;
+    }
+
+    &__post {
+      font-size: 16px;
+      letter-spacing: .02em;
+      margin-top: 6px;
+    }
+  }
+}

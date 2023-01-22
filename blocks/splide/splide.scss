@@ -6,6 +6,10 @@
       margin: 70px 0 0;
       width: 100%;
     }
+
+    &_team {
+      width: 907px;
+    }
   }
 
   &__track {
@@ -19,7 +23,54 @@
   }
 
   &__arrows {
-    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    &_place {
+      &_products {
+        display: none;
+      }
+
+      &_team {
+        top: -127px;
+        right: 75px;
+        width: 160px;
+      }
+    }
+  }
+
+  &__arrow {
+    margin: 0;
+    padding: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: 27px 31px;
+    background-position-y: center;
+
+    & > svg {
+      visibility: hidden;
+    }
+
+    &--prev {
+      background-image: url(../../images/strelka-slaidera-2.svg);
+      background-position-x: 17px;
+    }
+
+    &--next {
+      background-image: url(../../images/strelka-slaidera.svg);
+      background-position-x: 27px;
+    }
+
+    &:disabled {
+      background-color: #f0f0f0;
+    }
   }
 
   &__list {
@@ -42,6 +93,31 @@
     &_place {
       &_products {
         margin-top: 59px;
+      }
+
+      &_team {
+        width: 756px;
+      }
+    }
+
+    &__arrows {
+
+      &_place {
+        &_team {
+          top: -107px;
+          right: 62px;
+          width: 135px;
+        }
+      }
+    }
+
+    &__arrow {
+      width: 62px;
+      height: 62px;
+      background-size: 22px 26px;
+
+      &--next {
+        background-position-x: 24px;
       }
     }
   }
@@ -124,44 +200,27 @@
     }
 
     &__arrows {
-      display: block;
-      position: absolute;
-      width: 380px;
-      display: flex;
-      justify-content: space-between;
-      top: 222px;
-      z-index: 2;
+      &_place {
+        &_products {
+          display: block;
+          width: 380px;
+          top: 222px;
+        }
+      }
     }
 
     &__arrow {
-      margin: 0;
-      padding: 0;
       width: 35px;
       height: 35px;
-      border-radius: 50%;
-      border: none;
-      background-color: #fff;
       box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
-      background-repeat: no-repeat;
       background-size: 12px 14px;
-      background-position-y: center;
-
-      & > svg {
-        visibility: hidden;
-      }
 
       &--prev {
-        background-image: url(../../images/strelka-slaidera-2.svg);
         background-position-x: 9px;
       }
 
       &--next {
-        background-image: url(../../images/strelka-slaidera.svg);
         background-position-x: 12px;
-      }
-
-      &:disabled {
-        background-color: #f0f0f0;
       }
     }
   }
@@ -170,8 +229,12 @@
 @media all and (max-width: 425px) {
   .splide {
     &__arrows {
-      width: 270px;
-      top: 140px;
+      &_place {
+        &_products {
+          width: 270px;
+          top: 140px;
+        }
+      }
     }
   }
 }

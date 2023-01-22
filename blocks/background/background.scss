@@ -29,6 +29,15 @@
     right: 0;
     top: 65px;
     z-index: -1;
+
+    &-yellow {
+      width: 283px;
+      height: 340px;
+      position: absolute;
+      left: 0;
+      top: 275px;
+      z-index: -1;
+    }
   }
 }
 
@@ -54,6 +63,12 @@
       width: 855px;
       height: 892px;
       top: 55px;
+
+      &-yellow {
+        width: 237px;
+        height: 284px;
+        top: 230px;
+      }
     }
   }
 }

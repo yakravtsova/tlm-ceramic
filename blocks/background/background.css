@@ -25,6 +25,14 @@
   top: 65px;
   z-index: -1;
 }
+.background__pic-yellow {
+  width: 283px;
+  height: 340px;
+  position: absolute;
+  left: 0;
+  top: 275px;
+  z-index: -1;
+}
 
 @media all and (max-width: 1919px) {
   .background__text {
@@ -43,6 +51,11 @@
     width: 855px;
     height: 892px;
     top: 55px;
+  }
+  .background__pic-yellow {
+    width: 237px;
+    height: 284px;
+    top: 230px;
   }
 }
 @media all and (max-width: 1536px) {

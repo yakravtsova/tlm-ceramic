@@ -1,2 +1,23 @@
+.team {
+  position: relative;
+  padding: 124px 0 0 182px;
+  box-sizing: border-box;
+}
+.team__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 0;
+}
+.team__wrap {
+  align-self: flex-end;
+}
 
+@media all and (max-width: 1919px) {
+  .team {
+    padding: 104px 0 0 155px;
+  }
+  .team__content {
+    margin-top: 50px;
+  }
+}
 /*# sourceMappingURL=team.css.map */

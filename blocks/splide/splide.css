@@ -5,13 +5,54 @@
   margin: 70px 0 0;
   width: 100%;
 }
+.splide_place_team {
+  width: 907px;
+}
 .splide__track_place_products {
   box-sizing: border-box;
   width: 100%;
   overflow: visible;
 }
 .splide__arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.splide__arrows_place_products {
   display: none;
+}
+.splide__arrows_place_team {
+  top: -127px;
+  right: 75px;
+  width: 160px;
+}
+.splide__arrow {
+  margin: 0;
+  padding: 0;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: 27px 31px;
+  background-position-y: center;
+}
+.splide__arrow > svg {
+  visibility: hidden;
+}
+.splide__arrow--prev {
+  background-image: url(../../images/strelka-slaidera-2.svg);
+  background-position-x: 17px;
+}
+.splide__arrow--next {
+  background-image: url(../../images/strelka-slaidera.svg);
+  background-position-x: 27px;
+}
+.splide__arrow:disabled {
+  background-color: #f0f0f0;
 }
 .splide__list_place_products {
   box-sizing: border-box;
@@ -25,6 +66,22 @@
 @media all and (max-width: 1919px) {
   .splide_place_products {
     margin-top: 59px;
+  }
+  .splide_place_team {
+    width: 756px;
+  }
+  .splide__arrows_place_team {
+    top: -107px;
+    right: 62px;
+    width: 135px;
+  }
+  .splide__arrow {
+    width: 62px;
+    height: 62px;
+    background-size: 22px 26px;
+  }
+  .splide__arrow--next {
+    background-position-x: 24px;
   }
 }
 @media all and (max-width: 1536px) {
@@ -70,45 +127,26 @@
   .splide__pagination__page.is-active {
     background-color: #f3cd2b;
   }
-  .splide__arrows {
+  .splide__arrows_place_products {
     display: block;
-    position: absolute;
     width: 380px;
-    display: flex;
-    justify-content: space-between;
     top: 222px;
-    z-index: 2;
   }
   .splide__arrow {
-    margin: 0;
-    padding: 0;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    border: none;
-    background-color: #fff;
     box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat;
     background-size: 12px 14px;
-    background-position-y: center;
-  }
-  .splide__arrow > svg {
-    visibility: hidden;
   }
   .splide__arrow--prev {
-    background-image: url(../../images/strelka-slaidera-2.svg);
     background-position-x: 9px;
   }
   .splide__arrow--next {
-    background-image: url(../../images/strelka-slaidera.svg);
     background-position-x: 12px;
-  }
-  .splide__arrow:disabled {
-    background-color: #f0f0f0;
   }
 }
 @media all and (max-width: 425px) {
-  .splide__arrows {
+  .splide__arrows_place_products {
     width: 270px;
     top: 140px;
   }
