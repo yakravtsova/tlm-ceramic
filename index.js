@@ -12,7 +12,6 @@ new Splide( '#team', {
   classes: {
     arrows: 'splide__arrows splide__arrows_place_team'
   },
-  perPage: 2,
   perMove: 1,
   pagination: false,
 } ).mount();

@@ -24,5 +24,9 @@
   .title {
     font-size: 22px;
   }
+  .title_place_team {
+    width: 50%;
+    line-height: 1.2;
+  }
 }
 /*# sourceMappingURL=title.css.map */

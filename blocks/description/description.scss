@@ -69,11 +69,12 @@
 
 @media all and (max-width: 1536px) {
   .description {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: .065em;
 
     &_place {
       &_product {
+        font-size: 14px;
         height: 126px;
         margin-bottom: 23px;
 
@@ -83,9 +84,12 @@
       }
 
       &_about {
-        font-size: 12px;
         width: 440px;
         margin-bottom: 30px;
+      }
+
+      &_team {
+        width: 430px;
       }
     }
   }
@@ -93,12 +97,17 @@
 
 @media all and (max-width: 1200px) {
   .description {
+    font-size: 14px;
+
     &_place {
       &_about {
         align-self: flex-start;
-        font-size: 14px;
         width: 100%;
         margin-bottom: 34px;
+      }
+
+      &_team {
+        width: 100%;
       }
     }
   }
@@ -106,10 +115,11 @@
 
 @media all and (max-width: 1000px) {
   .description {
-    font-size: 12px;
+    font-size: 14px;
 
     &_place {
       &_product {
+        font-size: 12px;
         height: 108px;
         margin-bottom: 20px;
 
@@ -119,8 +129,18 @@
       }
 
       &_about {
-        font-size: 14px;
         letter-spacing: .05em;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 425px) {
+  .description {
+
+    &_place {
+      &_team {
+        margin-bottom: 35px;
       }
     }
   }

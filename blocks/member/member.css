@@ -22,6 +22,8 @@
   .member__photo {
     width: 361px;
     height: 496px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .member__name {
     font-size: 22px;
@@ -32,6 +34,41 @@
     font-size: 16px;
     letter-spacing: 0.02em;
     margin-top: 6px;
+  }
+}
+@media all and (max-width: 1536px) {
+  .member {
+    width: 289px !important;
+    margin-right: 61px;
+  }
+  .member__photo {
+    width: 289px;
+    height: 397px;
+  }
+  .member__name {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+  .member__post {
+    font-size: 13px;
+    margin-top: 5px;
+    letter-spacing: 0.01em;
+  }
+}
+@media all and (max-width: 1200px) {
+  .member {
+    width: 256px !important;
+    margin-right: 50px;
+  }
+  .member__photo {
+    width: 256px;
+    height: 351px;
+  }
+  .member__name {
+    margin-top: 10px;
+  }
+  .member__post {
+    letter-spacing: 0.1em;
   }
 }
 /*# sourceMappingURL=member.css.map */

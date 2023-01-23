@@ -56,10 +56,11 @@
 }
 @media all and (max-width: 1536px) {
   .description {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.065em;
   }
   .description_place_product {
+    font-size: 14px;
     height: 126px;
     margin-bottom: 23px;
   }
@@ -67,24 +68,32 @@
     height: 11px;
   }
   .description_place_about {
-    font-size: 12px;
     width: 440px;
     margin-bottom: 30px;
   }
+  .description_place_team {
+    width: 430px;
+  }
 }
 @media all and (max-width: 1200px) {
+  .description {
+    font-size: 14px;
+  }
   .description_place_about {
     align-self: flex-start;
-    font-size: 14px;
     width: 100%;
     margin-bottom: 34px;
+  }
+  .description_place_team {
+    width: 100%;
   }
 }
 @media all and (max-width: 1000px) {
   .description {
-    font-size: 12px;
+    font-size: 14px;
   }
   .description_place_product {
+    font-size: 12px;
     height: 108px;
     margin-bottom: 20px;
   }
@@ -92,8 +101,12 @@
     height: 10px;
   }
   .description_place_about {
-    font-size: 14px;
     letter-spacing: 0.05em;
+  }
+}
+@media all and (max-width: 425px) {
+  .description_place_team {
+    margin-bottom: 35px;
   }
 }
 /*# sourceMappingURL=description.css.map */

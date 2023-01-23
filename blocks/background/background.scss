@@ -94,6 +94,12 @@
       width: 685px;
       height: 713px;
       top: 40px;
+
+      &-yellow {
+        width: 188px;
+        height: 227px;
+        top: 185px;
+      }
     }
   }
 }
@@ -114,6 +120,12 @@
     &__pic {
       width: 411px;
       height: 428px;
+
+      &-yellow {
+        width: 138px;
+        height: 167px;
+        top: 130px;
+      }
     }
   }
 }
@@ -161,6 +173,10 @@
       height: 241px;
       bottom: 0;
       top: auto;
+
+      &-yellow {
+        top: 327px;
+      }
     }
   }
 }

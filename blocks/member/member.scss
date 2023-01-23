@@ -25,6 +25,7 @@
     &__photo {
       width: 361px;
       height: 496px;
+      object-fit: cover;
     }
 
     &__name {
@@ -37,6 +38,49 @@
       font-size: 16px;
       letter-spacing: .02em;
       margin-top: 6px;
+    }
+  }
+}
+
+@media all and (max-width: 1536px) {
+  .member {
+    width: 289px !important;
+    margin-right: 61px;
+
+    &__photo {
+      width: 289px;
+      height: 397px;
+    }
+
+    &__name {
+      font-size: 18px;
+      margin-top: 11px;
+    }
+
+    &__post {
+      font-size: 13px;
+      margin-top: 5px;
+      letter-spacing: 0.01em;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .member {
+    width: 256px !important;
+    margin-right: 50px;
+
+    &__photo {
+      width: 256px;
+      height: 351px;
+    }
+
+    &__name {
+      margin-top: 10px;
+    }
+
+    &__post {
+      letter-spacing: 0.1em;
     }
   }
 }
