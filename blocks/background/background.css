@@ -33,6 +33,11 @@
   top: 275px;
   z-index: -1;
 }
+.background__pic-yellows {
+  position: absolute;
+  right: 0;
+  top: 345px;
+}
 
 @media all and (max-width: 1919px) {
   .background__text {
@@ -57,6 +62,11 @@
     height: 284px;
     top: 230px;
   }
+  .background__pic-yellows {
+    width: 672px;
+    height: 552px;
+    top: 290px;
+  }
 }
 @media all and (max-width: 1536px) {
   .background__text {
@@ -80,6 +90,11 @@
     height: 227px;
     top: 185px;
   }
+  .background__pic-yellows {
+    width: 538px;
+    height: 441px;
+    top: 230px;
+  }
 }
 @media all and (max-width: 1200px) {
   .background__text_place_about {
@@ -96,6 +111,11 @@
     width: 138px;
     height: 167px;
     top: 130px;
+  }
+  .background__pic-yellows {
+    width: 323px;
+    height: 265px;
+    top: 240px;
   }
 }
 @media all and (max-width: 1000px) {
@@ -132,6 +152,11 @@
   }
   .background__pic-yellow {
     top: 327px;
+  }
+  .background__pic-yellows {
+    width: 235px;
+    height: 193px;
+    top: 330px;
   }
 }
 /*# sourceMappingURL=background.css.map */

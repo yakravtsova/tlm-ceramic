@@ -4,20 +4,32 @@
   line-height: 1.5;
   margin: 0;
 }
+.title_place_production {
+  margin-left: 184px;
+}
 
 @media all and (max-width: 1919px) {
   .title {
     font-size: 50px;
+  }
+  .title_place_production {
+    margin-left: 155px;
   }
 }
 @media all and (max-width: 1536px) {
   .title {
     font-size: 40px;
   }
+  .title_place_production {
+    margin-left: 120px;
+  }
 }
 @media all and (max-width: 1200px) {
   .title {
     font-size: 27px;
+  }
+  .title_place_production {
+    margin-left: 73px;
   }
 }
 @media all and (max-width: 750px) {
@@ -27,6 +39,9 @@
   .title_place_team {
     width: 50%;
     line-height: 1.2;
+  }
+  .title_place_production {
+    margin-left: 19px;
   }
 }
 /*# sourceMappingURL=title.css.map */

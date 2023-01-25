@@ -1,0 +1,54 @@
+.contacts {
+  padding: 123px 0 0 184px;
+
+  &__list {
+    margin: 0 5px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0 0 20px;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    margin: 0;
+
+    &_weight {
+      &_normal {
+        font-weight: normal;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 76px;
+  }
+
+  &__map {
+    width: 1001px;
+    height: 485px;
+  }
+}

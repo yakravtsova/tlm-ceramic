@@ -38,6 +38,12 @@
       top: 275px;
       z-index: -1;
     }
+
+    &-yellows {
+      position: absolute;
+      right: 0;
+      top: 345px;
+    }
   }
 }
 
@@ -68,6 +74,12 @@
         width: 237px;
         height: 284px;
         top: 230px;
+      }
+
+      &-yellows {
+        width: 672px;
+        height: 552px;
+        top: 290px;
       }
     }
   }
@@ -100,6 +112,12 @@
         height: 227px;
         top: 185px;
       }
+
+      &-yellows {
+        width: 538px;
+        height: 441px;
+        top: 230px;
+      }
     }
   }
 }
@@ -125,6 +143,12 @@
         width: 138px;
         height: 167px;
         top: 130px;
+      }
+
+      &-yellows {
+        width: 323px;
+        height: 265px;
+        top: 240px;
       }
     }
   }
@@ -176,6 +200,12 @@
 
       &-yellow {
         top: 327px;
+      }
+
+      &-yellows {
+        width: 235px;
+        height: 193px;
+        top: 330px;
       }
     }
   }
