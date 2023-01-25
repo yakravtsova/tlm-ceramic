@@ -10,6 +10,7 @@
 }
 .team__wrap {
   align-self: flex-end;
+  width: 40%;
 }
 
 @media all and (max-width: 1919px) {

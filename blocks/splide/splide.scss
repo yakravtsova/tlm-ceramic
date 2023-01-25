@@ -61,7 +61,7 @@
       }
 
       &_production-main {
-        right: -48vw;
+        right: calc(919px - 100vw + 93px);
         top: -127px;
       }
     }
@@ -155,7 +155,8 @@
         }
 
         &_production-main {
-          top: -105px;
+          right: calc(766px - 100vw + 80px);
+          top: -107px;
         }
       }
     }
@@ -210,6 +211,7 @@
         }
 
         &_production-main {
+          right: calc(613px - 100vw + 68px);
           top: -86px;
         }
       }
@@ -263,6 +265,7 @@
         }
 
         &_production-main {
+          right: calc(482px - 100vw + 50px);
           top: -67px;
         }
       }
