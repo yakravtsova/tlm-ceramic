@@ -1,11 +1,11 @@
 .button-yellow {
   margin: 0;
-  padding: 3px 45px 0;
+  padding: 0 45px 0;
   border: none;
   background-color: #f3cd2b;
   font-size: 16px;
   letter-spacing: 0.05em;
-  height: 58px;
+  height: 60px;
   border-radius: 60px;
   text-transform: uppercase;
 }
@@ -38,6 +38,9 @@
     display: block;
   }
   .button-yellow_place_product {
+    display: block;
+  }
+  .button-yellow_place_questions {
     display: block;
   }
 }

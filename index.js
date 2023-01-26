@@ -5,9 +5,16 @@ const dropdownWrap = document.querySelector('.header__dropdown-wrap');
 
 new Splide( '#products', {
   classes: {
-    arrows: 'splide__arrows splide__arrows_place_products'
-  }
+    arrows: 'splide__arrows splide__arrows_place_products',
+  },
+  mediaQuery: 'min',
+    breakpoints: {
+      750: {
+        destroy: true,
+      },
+    }
 } ).mount();
+
 new Splide( '#team', {
   classes: {
     arrows: 'splide__arrows splide__arrows_place_team'
@@ -60,6 +67,12 @@ const main = new Splide ( '#production__main', {
 main.sync( thumbnails );
 main.mount();
 thumbnails.mount();
+
+const input = document.querySelector('.questions__input');
+const maskOptions = {
+  mask: '+ {7} (000) 000-00-00'
+};
+const mask = IMask(input, maskOptions);
 
 const handleMenuToggle = (open = true) => {
   let method = open ? 'toggle' : 'remove';

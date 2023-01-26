@@ -4,6 +4,8 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 95px;
+  padding: 150px 0 0;
+  box-sizing: border-box;
 }
 .footer__info-column {
   display: flex;
@@ -57,6 +59,7 @@
 @media all and (max-width: 1919px) {
   .footer {
     width: 1211px;
+    padding-top: 125px;
     margin-bottom: 85px;
   }
   .footer__logo {
@@ -90,6 +93,7 @@
   .footer {
     max-width: 969px;
     margin-bottom: 78px;
+    padding-top: 100px;
   }
   .footer__logo {
     width: 179px;
@@ -117,15 +121,15 @@
   .footer {
     max-width: 1109px;
     width: 100%;
-    padding: 0 70px;
+    padding: 76px 70px 0;
     box-sizing: border-box;
   }
 }
 @media all and (max-width: 1000px) {
   .footer {
     width: 618px;
-    padding: 0;
     margin-bottom: 70px;
+    padding: 76px 0 0;
   }
   .footer__logo {
     width: 159px;
@@ -152,7 +156,7 @@
 @media all and (max-width: 719px) {
   .footer {
     width: 540px;
-    padding: 0 60px;
+    padding: 75px 60px 0;
   }
   .footer__text-bold:last-of-type {
     margin-top: 212px;
@@ -166,7 +170,7 @@
   .footer {
     width: 100%;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 75px 20px 0;
   }
   .footer__reg {
     margin-bottom: 20px;

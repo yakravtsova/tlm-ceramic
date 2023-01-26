@@ -44,6 +44,14 @@
       right: 0;
       top: 345px;
     }
+
+    &-gray {
+      width: 459px;
+      height: 304px;
+      position: absolute;
+      top: 415px;
+      left: 0;
+    }
   }
 }
 
@@ -80,6 +88,12 @@
         width: 672px;
         height: 552px;
         top: 290px;
+      }
+
+      &-gray {
+        width: 383px;
+        height: 254px;
+        top: 345px;
       }
     }
   }
@@ -118,6 +132,12 @@
         height: 441px;
         top: 230px;
       }
+
+      &-gray {
+        width: 305px;
+        height: 203px;
+        top: 275px;
+      }
     }
   }
 }
@@ -150,6 +170,12 @@
         height: 265px;
         top: 240px;
       }
+
+      &-gray {
+        width: 229px;
+        height: 151px;
+        top: 210px;
+      }
     }
   }
 }
@@ -171,6 +197,7 @@
 
     &__pic {
       top: 30px;
+
     }
   }
 }
@@ -206,6 +233,10 @@
         width: 235px;
         height: 193px;
         top: 330px;
+      }
+
+      &-gray {
+        display: none;
       }
     }
   }

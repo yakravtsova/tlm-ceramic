@@ -17,7 +17,6 @@
   height: 100%;
 }
 .production__item {
-  opacity: 0.6;
   margin-bottom: 26px;
 }
 .production__item.is-active {

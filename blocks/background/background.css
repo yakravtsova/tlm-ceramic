@@ -38,6 +38,13 @@
   right: 0;
   top: 345px;
 }
+.background__pic-gray {
+  width: 459px;
+  height: 304px;
+  position: absolute;
+  top: 415px;
+  left: 0;
+}
 
 @media all and (max-width: 1919px) {
   .background__text {
@@ -67,6 +74,11 @@
     height: 552px;
     top: 290px;
   }
+  .background__pic-gray {
+    width: 383px;
+    height: 254px;
+    top: 345px;
+  }
 }
 @media all and (max-width: 1536px) {
   .background__text {
@@ -95,6 +107,11 @@
     height: 441px;
     top: 230px;
   }
+  .background__pic-gray {
+    width: 305px;
+    height: 203px;
+    top: 275px;
+  }
 }
 @media all and (max-width: 1200px) {
   .background__text_place_about {
@@ -116,6 +133,11 @@
     width: 323px;
     height: 265px;
     top: 240px;
+  }
+  .background__pic-gray {
+    width: 229px;
+    height: 151px;
+    top: 210px;
   }
 }
 @media all and (max-width: 1000px) {
@@ -157,6 +179,9 @@
     width: 235px;
     height: 193px;
     top: 330px;
+  }
+  .background__pic-gray {
+    display: none;
   }
 }
 /*# sourceMappingURL=background.css.map */

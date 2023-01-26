@@ -1,5 +1,8 @@
 .splide {
   box-sizing: border-box;
+  &.is-initialized:not(.is-active) .splide__list {
+    display: flex;
+  }
 
   &_place {
     &_products {
@@ -15,12 +18,6 @@
       width: 919px;
       height: 734px;
     }
-
-/*    &_production {
-      width: 432px;
-      height: 734px;
-      overflow: hidden;
-    }*/
   }
 
   &__track {
