@@ -17,6 +17,26 @@
     &_product {
       margin-top: auto;
     }
+
+    &_product-card {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      height: 73px;
+      margin-top: 47px;
+      padding: 0 70px 5px;
+      font-size: 24px;
+      letter-spacing: .05em;
+    }
+
+    &_size {
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      height: 58px;
+      align-self: center;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -25,6 +45,20 @@
     font-size: 14px;
     height: 50px;
     padding: 3px 35px 0;
+
+    &_place {
+      &_product-card {
+        height: 61px;
+        margin-top: 39px;
+        padding: 0 57px 5px;
+        font-size: 20px;
+        letter-spacing: .07em;
+      }
+
+      &_size {
+        margin-top: 23px;
+      }
+    }
   }
 }
 
@@ -32,6 +66,23 @@
   .button-yellow {
     height: 39px;
     padding: 0 16px;
+
+    &_place {
+      &_product-card {
+        height: 49px;
+        margin-top: 34px;
+        padding: 0 42px 2px;
+        font-size: 18px;
+        letter-spacing: .01em;
+      }
+
+      &_size {
+        margin-top: 13px;
+        letter-spacing: .01em;
+        font-size: 13px;
+        padding: 0 22px;
+      }
+    }
   }
 }
 
@@ -52,16 +103,68 @@
       &_questions {
         display: block;
       }
+
+      &_product-card {
+        display: block;
+      }
+
+      &_size {
+        display: block;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .button-yellow {
+
+    &_place {
+
+      &_product-card {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 38px;
+        font-size: 14px;
+        padding: 0;
+        width: 140px;
+      }
+
+      &_size {
+        margin-top: 22px;
+        font-size: 14px;
+        letter-spacing: .06em;
+        height: 34px;
+      }
     }
   }
 }
 
 @media all and (max-width: 750px) {
-  .button-yellow {
+.button-yellow {
     display: block;
 
-    &_place_first-line {
-      display: none;
+    &_place {
+      &_first-line {
+        display: none;
+      }
+
+      &_product-card {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 425px) {
+  .button-yellow {
+
+    &_place {
+      &_product-card {
+        margin-top: 25px;
+      }
     }
   }
 }

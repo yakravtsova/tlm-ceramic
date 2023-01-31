@@ -15,6 +15,21 @@
   width: 919px;
   height: 734px;
 }
+.splide_place_product-card {
+  width: calc(100% + 60px);
+  max-width: 1163px;
+  height: 300px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 84px 0 0 -60px;
+  z-index: 2;
+  padding: 0 0 0 102px;
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
 .splide__track_place_products {
   box-sizing: border-box;
   width: 100%;
@@ -28,12 +43,18 @@
   height: 734px;
   overflow: hidden;
 }
+.splide__track_place_product-card {
+  width: 980px;
+  overflow: hidden;
+}
 .splide__arrows {
   position: absolute;
   display: flex;
   justify-content: space-between;
   z-index: 2;
   width: 160px;
+  height: 0;
+  overflow: visible;
 }
 .splide__arrows_place_products {
   display: none;
@@ -45,6 +66,12 @@
 .splide__arrows_place_production-main {
   right: calc(919px - 100vw + 93px);
   top: -127px;
+}
+.splide__arrows_place_product-card {
+  width: 980px;
+  left: 92px;
+  top: 45%;
+  z-index: 2;
 }
 .splide__arrow {
   margin: 0;
@@ -59,6 +86,11 @@
   background-size: 27px 31px;
   background-position-y: center;
 }
+.splide__arrow_place_product-card {
+  width: 35px;
+  height: 35px;
+  background-size: 12px 14px;
+}
 .splide__arrow > svg {
   visibility: hidden;
 }
@@ -66,9 +98,15 @@
   background-image: url(../../images/strelka-slaidera-2.svg);
   background-position-x: 17px;
 }
+.splide__arrow--prev_place_product-card {
+  background-position-x: 9px;
+}
 .splide__arrow--next {
   background-image: url(../../images/strelka-slaidera.svg);
   background-position-x: 27px;
+}
+.splide__arrow--next_place_product-card {
+  background-position-x: 12px;
 }
 .splide__arrow:disabled {
   background-color: #f0f0f0;
@@ -99,9 +137,19 @@
     width: 766px;
     height: 612px;
   }
+  .splide_place_product-card {
+    width: calc(100% + 52px);
+    margin-top: 73px;
+    height: 246px;
+    padding-left: 86px;
+    margin-left: -52px;
+  }
   .splide__track_place_production-main {
     width: 766px;
     height: 612px;
+  }
+  .splide__track_place_product-card {
+    width: 850px;
   }
   .splide__arrows {
     width: 135px;
@@ -114,13 +162,36 @@
     right: calc(766px - 100vw + 80px);
     top: -107px;
   }
+  .splide__arrows_place_product-card {
+    width: 850px;
+    left: 76px;
+  }
   .splide__arrow {
     width: 62px;
     height: 62px;
     background-size: 22px 26px;
   }
+  .splide__arrow--prev_place_product-card {
+    background-position-x: 9px;
+  }
   .splide__arrow--next {
     background-position-x: 24px;
+  }
+  .splide__arrow--next_place_product-card {
+    background-position-x: 12px;
+  }
+  .splide__arrow_place_product-card {
+    width: 35px;
+    height: 35px;
+    background-size: 12px 14px;
+  }
+}
+@media all and (max-width: 1585px) {
+  .splide_place_product-card {
+    padding-left: 30px;
+  }
+  .splide__arrows_place_product-card {
+    left: 20px;
   }
 }
 @media all and (max-width: 1536px) {
@@ -134,9 +205,20 @@
     width: 613px;
     height: 489px;
   }
+  .splide_place_product-card {
+    margin-top: 52px;
+    margin-left: -41px;
+    height: 198px;
+    padding-left: 68px;
+    width: calc(100% + 41px);
+    justify-content: space-between;
+  }
   .splide__track_place_production-main {
     width: 613px;
     height: 489px;
+  }
+  .splide__track_place_product-card {
+    width: 680px;
   }
   .splide__arrows {
     width: 109px;
@@ -149,6 +231,10 @@
     right: calc(613px - 100vw + 68px);
     top: -86px;
   }
+  .splide__arrows_place_product-card {
+    width: 690px;
+    left: 58px;
+  }
   .splide__arrow {
     width: 50px;
     height: 50px;
@@ -157,8 +243,19 @@
   .splide__arrow--next {
     background-position-x: 19px;
   }
+  .splide__arrow--next_place_product-card {
+    background-position-x: 12px;
+  }
   .splide__arrow--prev {
     background-position-x: 14px;
+  }
+  .splide__arrow--prev_place_product-card {
+    background-position-x: 10px;
+  }
+  .splide__arrow_place_product-card {
+    width: 35px;
+    height: 35px;
+    background-size: 12px 14px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -168,6 +265,15 @@
   .splide_place_production-main {
     width: 482px;
     height: 384px;
+  }
+  .splide_place_product-card {
+    width: 100%;
+    justify-content: flex-start;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0;
   }
   .splide__track_place_production-main {
     width: 482px;
@@ -183,6 +289,10 @@
     right: calc(482px - 100vw + 50px);
     top: -67px;
   }
+  .splide__arrows_place_product-card {
+    width: 690px;
+    left: 54px;
+  }
   .splide__arrow {
     width: 35px;
     height: 35px;
@@ -191,7 +301,13 @@
   .splide__arrow--next {
     background-position-x: 12px;
   }
+  .splide__arrow--next_place_product-card {
+    background-position-x: 12px;
+  }
   .splide__arrow--prev {
+    background-position-x: 9px;
+  }
+  .splide__arrow--prev_product-card {
     background-position-x: 9px;
   }
 }
@@ -205,11 +321,26 @@
   .splide_place_production {
     display: none;
   }
+  .splide_place_product-card {
+    margin-top: 32px;
+    margin-left: 72px;
+    justify-content: space-between;
+    height: 178px;
+    padding-left: 40px;
+    width: calc(100% - 72px);
+  }
+  .splide__track_place_product-card {
+    width: 600px;
+  }
   .splide__arrows_place_team {
     right: 0;
   }
   .splide__arrows_place_production-main {
     right: -32vw;
+  }
+  .splide__arrows_place_product-card {
+    left: 25px;
+    width: 630px;
   }
 }
 @media all and (max-width: 750px) {
@@ -223,6 +354,17 @@
     width: 100%;
     height: 80%;
   }
+  .splide_place_product-card {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    margin: 48px 0 0;
+    width: 100%;
+    box-shadow: none;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-left: 40px;
+  }
   .splide__track_place_products {
     width: 280px;
     overflow: hidden;
@@ -233,8 +375,15 @@
     width: 100%;
     height: 80%;
   }
+  .splide__track_place_product-card {
+    height: auto;
+    width: auto;
+  }
   .splide__list_place_products {
     width: 100%;
+  }
+  .splide__list_place_product-card {
+    flex-direction: column;
   }
   .splide__pagination {
     padding: 0;
@@ -279,6 +428,9 @@
   }
 }
 @media all and (max-width: 425px) {
+  .splide_place_product-card {
+    padding: 0;
+  }
   .splide__arrows_place_products {
     width: 270px;
     top: 140px;

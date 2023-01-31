@@ -19,6 +19,10 @@
         line-height: 1.28;
         width: 1100px;
       }
+
+      &_product-card {
+        top: 26px;
+      }
     }
   }
 
@@ -70,6 +74,10 @@
           font-size: 127px;
           letter-spacing: .055em;
         }
+
+        &_product-card {
+          top: 18px;
+        }
       }
     }
 
@@ -113,6 +121,10 @@
           font-size: 103px;
           letter-spacing: .05em;
         }
+
+        &_product-card {
+          top: 14px;
+        }
       }
     }
 
@@ -151,6 +163,10 @@
           letter-spacing: .03em;
           width: 500px;
           top: 181px;
+        }
+
+        &_product-card {
+          display: none;
         }
       }
     }
