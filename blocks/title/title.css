@@ -46,5 +46,9 @@
   .title_place_contacts {
     margin-left: 19px;
   }
+  .title_place_calculation {
+    line-height: 1.2;
+    margin-right: 19px;
+  }
 }
 /*# sourceMappingURL=title.css.map */
