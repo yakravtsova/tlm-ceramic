@@ -33,6 +33,13 @@
   line-height: 1.41;
   letter-spacing: 0.05em;
 }
+.description_place_about-production {
+  margin: 25px 0 0;
+  line-height: 1.4;
+}
+.description_place_about-production:first-child {
+  margin: 0;
+}
 .description:last-child {
   margin-bottom: 0;
 }

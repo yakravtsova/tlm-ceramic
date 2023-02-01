@@ -37,6 +37,15 @@
       line-height: 1.41;
       letter-spacing: .05em;
     }
+
+    &_about-production {
+      margin: 25px 0 0;
+      line-height: 1.4;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
   }
 
   &:last-child {

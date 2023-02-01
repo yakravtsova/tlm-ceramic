@@ -2,16 +2,18 @@ const menuButton = document.querySelector('.header__menu-btn-container');
 const menuDropdown = document.querySelector('.header__menu-dropdown');
 const menuCheckbox = document.querySelector('.header__checkbox');
 const dropdownWrap = document.querySelector('.header__dropdown-wrap');
+const showAllTextButton = document.querySelector('.button-yellow_place_about-production');
+const textColumns = document.querySelector('.about-production__textcolumns');
 
-new Splide( '#product-card', {
+new Splide( '#production-card', {
   perPage: 2,
   perMove: 1,
   pagination: false,
   classes: {
-    arrows: 'splide__arrows splide__arrows_place_product-card',
-    arrow: 'splide__arrow splide__arrow_place_product-card',
-    prev  : 'splide__arrow--prev splide__arrow--prev_place_product-card',
-		next  : 'splide__arrow--next splide__arrow--next_place_product-card',
+    arrows: 'splide__arrows splide__arrows_place_production-card',
+    arrow: 'splide__arrow splide__arrow_place_production-card',
+    prev  : 'splide__arrow--prev splide__arrow--prev_place_production-card',
+		next  : 'splide__arrow--next splide__arrow--next_place_production-card',
   },
   breakpoints: {
     750: {
@@ -33,5 +35,11 @@ const checkWindowSize = () => {
   }
 }
 
+const handleShowAllText = () => {
+  textColumns.classList.add('about-production__textcolumns_visible');
+  showAllTextButton.classList.add('button-yellow_place_about-production_hidden');
+}
+
+showAllTextButton.addEventListener('click', handleShowAllText);
 menuButton.addEventListener('click', handleMenuToggle);
 menuDropdown.addEventListener('click', () => handleMenuToggle(false));

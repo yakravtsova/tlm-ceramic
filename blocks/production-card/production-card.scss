@@ -1,4 +1,4 @@
-.product-card {
+.production-card {
   position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -82,7 +82,7 @@
 }
 
 @media all and (max-width: 1919px) {
-  .product-card {
+  .production-card {
     padding: 30px 0 0 48px;
     &__image {
       width: 637px;
@@ -147,7 +147,7 @@
 }
 
 @media all and (max-width: 1536px) {
-  .product-card {
+  .production-card {
     padding: 18px 0 0 38px;
 
     &__image {
@@ -212,7 +212,7 @@
 }
 
 @media all and (max-width: 1279px) {
-  .product-card {
+  .production-card {
 
     &__image {
       width: 383px;
@@ -222,7 +222,7 @@
 }
 
 @media all and (max-width: 1200px) {
-  .product-card {
+  .production-card {
 
     &__image {
       margin-top: 5px;
@@ -233,7 +233,7 @@
 }
 
 @media all and (max-width: 1000px) {
-  .product-card {
+  .production-card {
     padding-left: 0;
     padding-top: 16px;
 
@@ -298,9 +298,8 @@
 }
 
 @media all and (max-width: 750px) {
-  .product-card {
-    grid-template-columns: 1fr;
-    width: auto;
+  .production-card {
+    grid-template-columns: min-content;
 
     &__title {
       margin-left: 54px;
@@ -348,7 +347,7 @@
 }
 
 @media all and (max-width: 425px) {
-  .product-card {
+  .production-card {
     padding: 18px 0 0;
 
     &__title {

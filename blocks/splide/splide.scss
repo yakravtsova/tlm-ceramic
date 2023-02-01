@@ -19,7 +19,7 @@
       height: 734px;
     }
 
-    &_product-card {
+    &_production-card {
       width: calc(100% + 60px);
       max-width: 1163px;
       height: 300px;
@@ -54,7 +54,7 @@
         overflow: hidden;
       }
 
-      &_product-card {
+      &_production-card {
         width: 980px;
         overflow: hidden;
       }
@@ -85,7 +85,7 @@
         top: -127px;
       }
 
-      &_product-card {
+      &_production-card {
         width: 980px;
         left: 92px;
         top: 45%;
@@ -108,7 +108,7 @@
     background-position-y: center;
 
     &_place {
-      &_product-card {
+      &_production-card {
         width: 35px;
         height: 35px;
         background-size: 12px 14px;
@@ -124,7 +124,7 @@
       background-position-x: 17px;
 
       &_place {
-        &_product-card {
+        &_production-card {
           background-position-x: 9px;
         }
       }
@@ -135,7 +135,7 @@
       background-position-x: 27px;
 
       &_place {
-        &_product-card {
+        &_production-card {
           background-position-x: 12px;
         }
       }
@@ -182,7 +182,7 @@
         height: 612px;
       }
 
-      &_product-card {
+      &_production-card {
         width: calc(100% + 52px);
         margin-top: 73px;
         height: 246px;
@@ -198,7 +198,7 @@
           height: 612px;
         }
 
-        &_product-card {
+        &_production-card {
           width: 850px;
         }
       }
@@ -218,7 +218,7 @@
           top: -107px;
         }
 
-        &_product-card {
+        &_production-card {
           width: 850px;
           left: 76px;
         }
@@ -232,7 +232,7 @@
 
       &--prev {
         &_place {
-          &_product-card {
+          &_production-card {
             background-position-x: 9px;
           }
         }
@@ -241,14 +241,14 @@
       &--next {
         background-position-x: 24px;
         &_place {
-          &_product-card {
+          &_production-card {
             background-position-x: 12px;
           }
         }
       }
 
       &_place {
-        &_product-card {
+        &_production-card {
           width: 35px;
           height: 35px;
           background-size: 12px 14px;
@@ -262,7 +262,7 @@
   .splide {
     &_place {
 
-      &_product-card {
+      &_production-card {
         padding-left: 30px;
       }
     }
@@ -270,7 +270,7 @@
     &__arrows {
       &_place {
 
-        &_product-card {
+        &_production-card {
           left: 20px;
         }
       }
@@ -296,7 +296,7 @@
         height: 489px;
       }
 
-      &_product-card {
+      &_production-card {
         margin-top: 52px;
         margin-left: -41px;
         height: 198px;
@@ -313,7 +313,7 @@
           height: 489px;
         }
 
-        &_product-card {
+        &_production-card {
           width: 680px;
         }
       }
@@ -333,7 +333,7 @@
           top: -86px;
         }
 
-        &_product-card {
+        &_production-card {
           width: 690px;
           left: 58px;
         }
@@ -349,7 +349,7 @@
         background-position-x: 19px;
 
         &_place {
-          &_product-card {
+          &_production-card {
             background-position-x: 12px;
           }
         }
@@ -359,14 +359,14 @@
         background-position-x: 14px;
 
         &_place {
-          &_product-card {
+          &_production-card {
             background-position-x: 10px;
           }
         }
       }
 
       &_place {
-        &_product-card {
+        &_production-card {
           width: 35px;
           height: 35px;
           background-size: 12px 14px;
@@ -389,7 +389,7 @@
         height: 384px;
       }
 
-      &_product-card {
+      &_production-card {
         width: 100%;
         justify-content: flex-start;
         grid-row-start: 4;
@@ -422,7 +422,7 @@
           top: -67px;
         }
 
-        &_product-card {
+        &_production-card {
           width: 690px;
           left: 54px;
         }
@@ -438,7 +438,7 @@
         background-position-x: 12px;
 
         &_place {
-          &_product-card {
+          &_production-card {
             background-position-x: 12px;
           }
         }
@@ -447,7 +447,7 @@
       &--prev {
         background-position-x: 9px;
 
-        &_product-card {
+        &_production-card {
           background-position-x: 9px;
         }
       }
@@ -472,7 +472,7 @@
         display: none;
       }
 
-      &_product-card {
+      &_production-card {
         margin-top: 32px;
         margin-left: 72px;
         justify-content: space-between;
@@ -484,7 +484,7 @@
 
     &__track {
       &_place {
-        &_product-card {
+        &_production-card {
           width: 600px;
         }
       }
@@ -500,7 +500,7 @@
           right: -32vw;
         }
 
-        &_product-card {
+        &_production-card {
           left: 25px;
           width: 630px;
         }
@@ -525,7 +525,7 @@
         height: 80%;
       }
 
-      &_product-card {
+      &_production-card {
         flex-direction: column;
         height: auto;
         align-items: flex-start;
@@ -552,7 +552,7 @@
           height: 80%;
         }
 
-        &_product-card {
+        &_production-card {
           height: auto;
           width: auto;
         }
@@ -565,7 +565,7 @@
           width: 100%;
         }
 
-        &_product-card {
+        &_production-card {
           flex-direction: column;
         }
       }
@@ -631,7 +631,7 @@
 
     &_place {
 
-      &_product-card {
+      &_production-card {
         padding: 0;
       }
     }
