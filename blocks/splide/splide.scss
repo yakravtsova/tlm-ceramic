@@ -34,6 +34,13 @@
       display: flex;
       align-items: center;
     }
+
+    &_application {
+      width: 1177px;
+      height: auto;
+      align-self: flex-end;
+      margin-top: 93px;
+    }
   }
 
   &__track {
@@ -57,6 +64,11 @@
       &_production-card {
         width: 980px;
         overflow: hidden;
+      }
+
+      &_application {
+        width: 100%;
+        height: 700px;
       }
     }
   }
@@ -157,6 +169,11 @@
         justify-content: space-between;
       }
 
+      &_application {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
     /*  &_production {
         display: flex;
         flex-direction: column;
@@ -189,6 +206,11 @@
         padding-left: 86px;
         margin-left: -52px;
       }
+
+      &_application {
+        width: 975px;
+        margin-top: 71px;
+      }
     }
 
     &__track {
@@ -200,6 +222,10 @@
 
         &_production-card {
           width: 850px;
+        }
+
+        &_application {
+          height: 550px;
         }
       }
     }
@@ -304,6 +330,11 @@
         width: calc(100% + 41px);
         justify-content: space-between;
       }
+
+      &_application {
+        width: 786px;
+        margin-top: 62px;
+      }
     }
 
     &__track {
@@ -315,6 +346,10 @@
 
         &_production-card {
           width: 680px;
+        }
+
+        &_application {
+          height: 413px;
         }
       }
     }
@@ -480,6 +515,11 @@
         padding-left: 40px;
         width: calc(100% - 72px);
       }
+
+      &_application {
+        margin-top: 26px;
+        width: 600px;
+      }
     }
 
     &__track {
@@ -536,6 +576,12 @@
         grid-row-end: 6;
         padding-left: 40px;
       }
+
+      &_application {
+        margin-top: 36px;
+        align-self: center;
+        width: 280px;
+      }
     }
 
     &__track {
@@ -555,6 +601,9 @@
         &_production-card {
           height: auto;
           width: auto;
+        }
+
+        &_application {
         }
       }
     }
@@ -603,6 +652,14 @@
           right: 0;
           top: 45%;
           width: 100%;
+          padding: 0 8px 0;
+          box-sizing: border-box;
+        }
+
+        &_application {
+          right: -20px;
+          top: 42%;
+          width: 320px;
           padding: 0 8px 0;
           box-sizing: border-box;
         }

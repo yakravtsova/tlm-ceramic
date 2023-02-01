@@ -21,6 +21,7 @@
 @import url(./blocks/questions/questions.css);
 @import url(./blocks/production-card/production-card.css);
 @import url(./blocks/about-production/about-production.css);
+@import url(./blocks/application/application.css);
 .bold {
   font-weight: bold;
   margin: 0;

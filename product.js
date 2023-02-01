@@ -22,6 +22,19 @@ new Splide( '#production-card', {
   }
 } ).mount();
 
+new Splide( '#application', {
+  classes: {
+    arrows: 'splide__arrows splide__arrows_place_application',
+  },
+  mediaQuery: 'min',
+  breakpoints: {
+    750: {
+      destroy: true,
+    },
+  },
+  pagination: false
+} ).mount();
+
 const handleMenuToggle = (open = true) => {
   let method = open ? 'toggle' : 'remove';
   menuDropdown.classList[method]('header__menu-dropdown_active');
