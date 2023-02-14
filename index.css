@@ -24,6 +24,7 @@
 @import url(./blocks/application/application.css);
 @import url(./blocks/calculation/calculation.css);
 @import url(./blocks/form/form.css);
+@import url(./blocks/advantages/advantages.css);
 .bold {
   font-weight: bold;
   margin: 0;

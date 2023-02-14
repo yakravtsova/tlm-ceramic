@@ -12,6 +12,9 @@
   -o-object-position: bottom;
      object-position: bottom;
 }
+.application__list {
+  display: grid;
+}
 .application__item {
   width: 560px;
   margin-bottom: 92px;

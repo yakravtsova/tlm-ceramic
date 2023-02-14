@@ -324,3 +324,14 @@
     }
   }
 }
+
+@media all and (max-width: 425px) {
+  .form {
+    &__approval {
+      &-label{
+        min-width: auto;
+        width: auto;
+      }
+    }
+  }
+}

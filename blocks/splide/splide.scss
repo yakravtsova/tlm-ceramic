@@ -1,7 +1,15 @@
 .splide {
   box-sizing: border-box;
   &.is-initialized:not(.is-active) .splide__list {
-    display: flex;
+    display: grid;
+  }
+
+  &.is-initialized:not(.is-active) .splide__list .splide__list_place_advantages {
+    display: grid;
+  }
+
+  &.is-initialized:not(.is-active) .splide__list .splide__list_place_application {
+    display: grid;
   }
 
   &_place {
@@ -40,6 +48,11 @@
       height: auto;
       align-self: flex-end;
       margin-top: 93px;
+    }
+
+    &_advantages {
+      margin: 80px 0 0;
+      align-self: flex-end;
     }
   }
 
@@ -164,20 +177,28 @@
         box-sizing: border-box;
         padding: 0;
         list-style-type: none;
-        display: flex;
         width: 100%;
-        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
       }
 
       &_application {
-        flex-direction: column;
-        flex-wrap: wrap;
+      //  flex-direction: column;
+      //  flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: column;
       }
 
-    /*  &_production {
-        display: flex;
-        flex-direction: column;
-      }*/
+      &_advantages {
+        display: grid;
+        grid-template-columns: repeat(2, 600px);
+        grid-template-rows: auto;
+        gap: 30px 10px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
     }
   }
 }
@@ -211,6 +232,10 @@
         width: 975px;
         margin-top: 71px;
       }
+
+      &_advantages {
+        margin: 68px 0 0;
+      }
     }
 
     &__track {
@@ -226,6 +251,15 @@
 
         &_application {
           height: 550px;
+        }
+      }
+    }
+
+    &__list {
+      &_place {
+        &_advantages {
+          grid-template-columns: repeat(2, 500px);
+          gap: 27px 10px;
         }
       }
     }
@@ -335,6 +369,10 @@
         width: 786px;
         margin-top: 62px;
       }
+
+      &_advantages {
+        margin: 52px 0 0;
+      }
     }
 
     &__track {
@@ -350,6 +388,14 @@
 
         &_application {
           height: 413px;
+        }
+      }
+    }
+
+    &__list {
+      &_place {
+        &_advantages {
+          grid-template-columns: repeat(2, 410px);
         }
       }
     }
@@ -444,6 +490,18 @@
       }
     }
 
+    &__list {
+      &_place {
+        &_advantages {
+          grid-template-columns: repeat(2, 350px);
+        }
+
+        &_products {
+          gap: 20px;
+        }
+      }
+    }
+
     &__arrows {
       width: 74px;
 
@@ -520,12 +578,29 @@
         margin-top: 26px;
         width: 600px;
       }
+
+      &_advantages {
+        margin: 34px 0 0;
+      }
     }
 
     &__track {
       &_place {
         &_production-card {
           width: 600px;
+        }
+      }
+    }
+
+    &__list {
+      &_place {
+        &_advantages {
+          grid-template-columns: repeat(2, 260px);
+          gap: 20px;
+        }
+
+        &_products {
+        //  gap: 0;
         }
       }
     }
@@ -580,7 +655,13 @@
       &_application {
         margin-top: 36px;
         align-self: center;
-        width: 280px;
+        width: 260px;
+      }
+
+      &_advantages {
+        margin: 27px 0 0;
+        width: 520px;
+        align-self: center;
       }
     }
 
@@ -603,8 +684,6 @@
           width: auto;
         }
 
-        &_application {
-        }
       }
     }
 
@@ -616,6 +695,17 @@
 
         &_production-card {
           flex-direction: column;
+        }
+
+
+        &_application {
+        }
+
+        &_advantages {
+          grid-template-columns: 260px;
+          grid-template-rows: repeat(4, auto);
+          grid-auto-flow: column;
+          gap: 0;
         }
       }
     }
@@ -657,11 +747,17 @@
         }
 
         &_application {
-          right: -20px;
-          top: 42%;
+          right: -10px;
+          top: 50%;
           width: 320px;
           padding: 0 8px 0;
           box-sizing: border-box;
+        }
+
+        &_advantages {
+          width: 580px;
+          right: -30px;
+          top: 50%;
         }
       }
     }
@@ -678,6 +774,25 @@
 
       &--next {
         background-position-x: 12px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 605px) {
+  .splide {
+    &_place {
+      &_advantages {
+        width: 260px;
+      }
+    }
+
+    &__arrows {
+      &_place {
+        &_advantages {
+          width: 300px;
+          right: -20px;
+        }
       }
     }
   }
@@ -703,6 +818,10 @@
         &_team {
           top: -75px;
           right: -16px;
+        }
+
+        &_application {
+          right: -30px;
         }
       }
     }

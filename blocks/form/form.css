@@ -271,4 +271,10 @@
     font-size: 24px;
   }
 }
+@media all and (max-width: 425px) {
+  .form__approval-label {
+    min-width: auto;
+    width: auto;
+  }
+}
 /*# sourceMappingURL=form.css.map */

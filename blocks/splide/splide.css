@@ -2,7 +2,13 @@
   box-sizing: border-box;
 }
 .splide.is-initialized:not(.is-active) .splide__list {
-  display: flex;
+  display: grid;
+}
+.splide.is-initialized:not(.is-active) .splide__list .splide__list_place_advantages {
+  display: grid;
+}
+.splide.is-initialized:not(.is-active) .splide__list .splide__list_place_application {
+  display: grid;
 }
 .splide_place_products {
   margin: 70px 0 0;
@@ -35,6 +41,10 @@
   height: auto;
   align-self: flex-end;
   margin-top: 93px;
+}
+.splide_place_advantages {
+  margin: 80px 0 0;
+  align-self: flex-end;
 }
 .splide__track_place_products {
   box-sizing: border-box;
@@ -121,23 +131,27 @@
 .splide__arrow:disabled {
   background-color: #f0f0f0;
 }
-.splide__list_place {
-  /*  &_production {
-      display: flex;
-      flex-direction: column;
-    }*/
-}
 .splide__list_place_products {
   box-sizing: border-box;
   padding: 0;
   list-style-type: none;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 .splide__list_place_application {
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+}
+.splide__list_place_advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: auto;
+  gap: 30px 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media all and (max-width: 1919px) {
@@ -162,6 +176,9 @@
     width: 975px;
     margin-top: 71px;
   }
+  .splide_place_advantages {
+    margin: 68px 0 0;
+  }
   .splide__track_place_production-main {
     width: 766px;
     height: 612px;
@@ -171,6 +188,10 @@
   }
   .splide__track_place_application {
     height: 550px;
+  }
+  .splide__list_place_advantages {
+    grid-template-columns: repeat(2, 500px);
+    gap: 27px 10px;
   }
   .splide__arrows {
     width: 135px;
@@ -238,6 +259,9 @@
     width: 786px;
     margin-top: 62px;
   }
+  .splide_place_advantages {
+    margin: 52px 0 0;
+  }
   .splide__track_place_production-main {
     width: 613px;
     height: 489px;
@@ -247,6 +271,9 @@
   }
   .splide__track_place_application {
     height: 413px;
+  }
+  .splide__list_place_advantages {
+    grid-template-columns: repeat(2, 410px);
   }
   .splide__arrows {
     width: 109px;
@@ -307,6 +334,12 @@
     width: 482px;
     height: 384px;
   }
+  .splide__list_place_advantages {
+    grid-template-columns: repeat(2, 350px);
+  }
+  .splide__list_place_products {
+    gap: 20px;
+  }
   .splide__arrows {
     width: 74px;
   }
@@ -361,8 +394,15 @@
     margin-top: 26px;
     width: 600px;
   }
+  .splide_place_advantages {
+    margin: 34px 0 0;
+  }
   .splide__track_place_production-card {
     width: 600px;
+  }
+  .splide__list_place_advantages {
+    grid-template-columns: repeat(2, 260px);
+    gap: 20px;
   }
   .splide__arrows_place_team {
     right: 0;
@@ -400,7 +440,12 @@
   .splide_place_application {
     margin-top: 36px;
     align-self: center;
-    width: 280px;
+    width: 260px;
+  }
+  .splide_place_advantages {
+    margin: 27px 0 0;
+    width: 520px;
+    align-self: center;
   }
   .splide__track_place_products {
     width: 280px;
@@ -421,6 +466,12 @@
   }
   .splide__list_place_production-card {
     flex-direction: column;
+  }
+  .splide__list_place_advantages {
+    grid-template-columns: 260px;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    gap: 0;
   }
   .splide__pagination {
     padding: 0;
@@ -452,11 +503,16 @@
     box-sizing: border-box;
   }
   .splide__arrows_place_application {
-    right: -20px;
-    top: 42%;
+    right: -10px;
+    top: 50%;
     width: 320px;
     padding: 0 8px 0;
     box-sizing: border-box;
+  }
+  .splide__arrows_place_advantages {
+    width: 580px;
+    right: -30px;
+    top: 50%;
   }
   .splide__arrow {
     width: 35px;
@@ -471,6 +527,15 @@
     background-position-x: 12px;
   }
 }
+@media all and (max-width: 605px) {
+  .splide_place_advantages {
+    width: 260px;
+  }
+  .splide__arrows_place_advantages {
+    width: 300px;
+    right: -20px;
+  }
+}
 @media all and (max-width: 425px) {
   .splide_place_production-card {
     padding: 0;
@@ -482,6 +547,9 @@
   .splide__arrows_place_team {
     top: -75px;
     right: -16px;
+  }
+  .splide__arrows_place_application {
+    right: -30px;
   }
 }
 /*# sourceMappingURL=splide.css.map */

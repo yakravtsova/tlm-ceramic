@@ -26,11 +26,37 @@ new Splide( '#application', {
   classes: {
     arrows: 'splide__arrows splide__arrows_place_application',
   },
+  fixedWidth: 260,
+  perPage: 2,
+  perMove: 2,
   mediaQuery: 'min',
   breakpoints: {
-    750: {
+    751: {
       destroy: true,
     },
+  },
+  pagination: false
+} ).mount();
+
+new Splide( '#advantages', {
+  mediaQuery: 'min',
+  breakpoints: {
+    751: {
+      destroy: true,
+    },
+    605: {
+      fixedWidth: 260,
+      perPage: 4,
+      perMove: 4,
+    },
+    320: {
+      fixedWidth: 260,
+      perPage: 1,
+      perMove: 4,
+    }
+  },
+  classes: {
+    arrows: 'splide__arrows splide__arrows_place_advantages',
   },
   pagination: false
 } ).mount();

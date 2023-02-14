@@ -11,6 +11,10 @@
     object-position: bottom;
   }
 
+  &__list {
+    display: grid
+  }
+
   &__item {
     width: 560px;
     margin-bottom: 92px;
