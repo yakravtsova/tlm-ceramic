@@ -46,6 +46,11 @@
   margin: 80px 0 0;
   align-self: flex-end;
 }
+.splide_place_documents {
+  margin: 80px 0 0;
+  align-self: flex-end;
+  width: 1800px;
+}
 .splide__track_place_products {
   box-sizing: border-box;
   width: 100%;
@@ -66,6 +71,9 @@
 .splide__track_place_application {
   width: 100%;
   height: 700px;
+}
+.splide__track_place_documents {
+  width: 100%;
 }
 .splide__arrows {
   position: absolute;
@@ -149,6 +157,14 @@
   grid-template-columns: repeat(2, 600px);
   grid-template-rows: auto;
   gap: 30px 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.splide__list_place_documents {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
   margin: 0;
   padding: 0;
   list-style-type: none;

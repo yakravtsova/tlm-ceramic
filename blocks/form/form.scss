@@ -92,20 +92,6 @@
     display: flex;
     align-items: center;
   }
-
-  &__button {
-    border: none;
-    padding: 0;
-    margin: 0 30px 0 0;
-    background-color: #fff;
-    width: 53px;
-    height: 53px;
-    border-radius: 50%;
-    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    font-size: 25px;
-    cursor: pointer;
-  }
 }
 
 @media all and (max-width: 1919px) {
@@ -164,12 +150,6 @@
 
     &__wrap {
       margin-top: 27px;
-    }
-
-    &__button {
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
     }
   }
 }
@@ -231,12 +211,6 @@
     &__wrap {
       margin-top: 22px;
     }
-
-    &__button {
-      width: 31px;
-      height: 31px;
-      font-size: 18px;
-    }
   }
 }
 
@@ -279,10 +253,6 @@
     &__wrap {
       margin-top: 20px;
     }
-
-    &__button {
-      font-size: 22px;
-    }
   }
 }
 
@@ -317,10 +287,6 @@
         margin-left: 20px;
         flex-grow: 1;
       }
-    }
-
-    &__button {
-      font-size: 24px;
     }
   }
 }
