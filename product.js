@@ -61,7 +61,7 @@ new Splide( '#advantages', {
   pagination: false
 } ).mount();
 
-const thumbnails = new Splide( '#video__thumbnails', {
+const videoThumbnails = new Splide( '#video__thumbnails', {
   fixedWidth: 432,
   fixedHeight: 354,
   height: 734,
@@ -93,7 +93,7 @@ const thumbnails = new Splide( '#video__thumbnails', {
   }
 });
 
-const main = new Splide ( '#video__main', {
+const videoMain = new Splide ( '#video__main', {
   type      : 'fade',
   rewind    : true,
   pagination: false,
@@ -107,9 +107,9 @@ const main = new Splide ( '#video__main', {
   }
 });
 
-main.sync( thumbnails );
-main.mount();
-thumbnails.mount();
+videoMain.sync( videoThumbnails );
+videoMain.mount();
+videoThumbnails.mount();
 
 new Splide( '#documents', {
   fixedWidth: 600,
@@ -135,6 +135,51 @@ new Splide( '#documents', {
   },
   pagination: false
 } ).mount();
+
+const photoThumbnails = new Splide( '#photo__thumbnails', {
+  fixedWidth: 432,
+  fixedHeight: 354,
+  height: 734,
+  gap: 26,
+  focus: 0,
+  direction: 'ttb',
+  isNavigation: true,
+  pagination: false,
+  arrows: false,
+  breakpoints: {
+    1919: {
+      fixedWidth: 360,
+      fixedHeight: 295,
+      gap: 21,
+      height: 612
+    },
+    1536: {
+      fixedWidth: 288,
+      fixedHeight: 236,
+      gap: 16,
+      height: 489
+    },
+    1200: {
+      fixedWidth: 228,
+      fixedHeight: 187,
+      gap: 10,
+      height: 384
+    }
+  }
+});
+
+const photoMain = new Splide ( '#photo__main', {
+  type      : 'fade',
+  rewind    : true,
+  pagination: false,
+  classes: {
+    arrows: 'splide__arrows splide__arrows_place_production-main'
+  }
+});
+
+photoMain.sync( photoThumbnails );
+photoMain.mount();
+photoThumbnails.mount();
 
 const handleMenuToggle = (open = true) => {
   let method = open ? 'toggle' : 'remove';
