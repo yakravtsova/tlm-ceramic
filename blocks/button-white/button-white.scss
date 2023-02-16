@@ -10,6 +10,12 @@
   font-weight: bold;
   font-size: 25px;
   cursor: pointer;
+
+  &__img {
+    width: 25px;
+    height: 24px;
+    margin-bottom: 4px;
+  }
 }
 
 @media all and (max-width: 1919px) {
@@ -25,12 +31,32 @@
     width: 31px;
     height: 31px;
     font-size: 18px;
+
+    &__img {
+      width: 18px;
+      height: 17px;
+      margin-bottom: 0;
+    }
   }
 }
 
 @media all and (max-width: 1200px) {
   .button-white {
     font-size: 22px;
+
+    &_place {
+      &_documents {
+        width: 27px;
+        height: 27px;
+        margin-right: 15px;
+      }
+    }
+
+    &__img {
+      width: 12px;
+      height: 11px;
+      margin-bottom: 7px;
+    }
   }
 }
 

@@ -22,10 +22,6 @@
       width: 907px;
     }
 
-    &_production-main {
-      width: 919px;
-      height: 734px;
-    }
 
     &_production-card {
       width: calc(100% + 60px);
@@ -58,7 +54,6 @@
     &_documents {
       margin: 80px 0 0;
       align-self: flex-end;
-      width: 1800px;
     }
   }
 
@@ -91,7 +86,7 @@
       }
 
       &_documents {
-        width: 100%;
+        width: 1300px;
       }
     }
   }
@@ -125,6 +120,11 @@
         left: 92px;
         top: 45%;
         z-index: 2;
+      }
+
+      &_documents {
+        top: -150px;
+        right: 65px;
       }
     }
   }
@@ -211,10 +211,13 @@
       &_documents {
         display: grid;
         grid-template-rows: repeat(2, auto);
+        grid-template-columns: 600px;
         grid-auto-flow: column;
+        grid-auto-columns: 600px;
         margin: 0;
         padding: 0;
         list-style-type: none;
+        gap: 60px 0;
       }
     }
   }
@@ -253,6 +256,10 @@
       &_advantages {
         margin: 68px 0 0;
       }
+
+      &_documents {
+        margin: 60px 0 0;
+      }
     }
 
     &__track {
@@ -269,6 +276,10 @@
         &_application {
           height: 550px;
         }
+
+        &_documents {
+          width: 1080px;
+        }
       }
     }
 
@@ -277,6 +288,12 @@
         &_advantages {
           grid-template-columns: repeat(2, 500px);
           gap: 27px 10px;
+        }
+
+        &_documents {
+          grid-template-columns: 500px;
+          grid-auto-columns: 500px;
+          gap: 50px 0;
         }
       }
     }
@@ -298,6 +315,10 @@
         &_production-card {
           width: 850px;
           left: 76px;
+        }
+
+        &_documents {
+          top: -120px;
         }
       }
     }
@@ -390,6 +411,10 @@
       &_advantages {
         margin: 52px 0 0;
       }
+
+      &_documents {
+        margin: 48px 0 0;
+      }
     }
 
     &__track {
@@ -406,6 +431,10 @@
         &_application {
           height: 413px;
         }
+
+        &_documents {
+          width: 860px;
+        }
       }
     }
 
@@ -413,6 +442,12 @@
       &_place {
         &_advantages {
           grid-template-columns: repeat(2, 410px);
+        }
+
+        &_documents {
+          grid-template-columns: 420px;
+          grid-auto-columns: 420px;
+          gap: 45px 0;
         }
       }
     }
@@ -496,6 +531,10 @@
         grid-column-end: 3;
         margin-left: 0;
       }
+
+      &_documents {
+        margin-top: 32px;
+      }
     }
 
     &__track {
@@ -503,6 +542,10 @@
         &_production-main {
           width: 482px;
           height: 384px;
+        }
+
+        &_documents {
+          width: 650px;
         }
       }
     }
@@ -515,6 +558,12 @@
 
         &_products {
           gap: 20px;
+        }
+
+        &_documents {
+          grid-template-columns: 280px;
+          grid-auto-columns: 280px;
+          gap: 45px 0;
         }
       }
     }
@@ -535,6 +584,10 @@
         &_production-card {
           width: 690px;
           left: 54px;
+        }
+
+        &_documents {
+          top: -65px;
         }
       }
     }
@@ -606,6 +659,10 @@
         &_production-card {
           width: 600px;
         }
+
+        &_documents {
+          width: 560px;
+        }
       }
     }
 
@@ -614,10 +671,6 @@
         &_advantages {
           grid-template-columns: repeat(2, 260px);
           gap: 20px;
-        }
-
-        &_products {
-        //  gap: 0;
         }
       }
     }
@@ -635,6 +688,10 @@
         &_production-card {
           left: 25px;
           width: 630px;
+        }
+
+        &_documents {
+          right: 18px;;
         }
       }
     }
@@ -680,6 +737,12 @@
         width: 520px;
         align-self: center;
       }
+
+      &_documents {
+        margin-top: 20px;
+        width: 100%;
+        align-self: flex-start;
+      }
     }
 
     &__track {
@@ -701,6 +764,9 @@
           width: auto;
         }
 
+        &_documents {
+          width: 100%;
+        }
       }
     }
 
@@ -714,15 +780,15 @@
           flex-direction: column;
         }
 
-
-        &_application {
-        }
-
         &_advantages {
           grid-template-columns: 260px;
           grid-template-rows: repeat(4, auto);
           grid-auto-flow: column;
           gap: 0;
+        }
+
+        &_documents {
+          gap: 30px 0;
         }
       }
     }
@@ -775,6 +841,10 @@
           width: 580px;
           right: -30px;
           top: 50%;
+        }
+
+        &_documents {
+          top: -55px;
         }
       }
     }

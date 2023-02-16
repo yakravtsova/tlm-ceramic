@@ -50,5 +50,8 @@
     line-height: 1.2;
     margin-right: 19px;
   }
-}
-/*# sourceMappingURL=title.css.map */
+  .title_place_documents {
+    line-height: 1.2;
+    margin-right: 90px;
+  }
+}/*# sourceMappingURL=title.css.map */

@@ -1,7 +1,61 @@
 .documents {
-  padding: 141px 120px 0 188px;
+  padding: 141px 0 0 188px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
-/*# sourceMappingURL=documents.css.map */
+.documents__description {
+  font-size: 35px;
+  letter-spacing: 0.07em;
+  line-height: 1.4;
+  margin: 0 0 25px;
+}
+.documents__container {
+  display: flex;
+  align-items: center;
+}
+.documents__action {
+  margin: 0 0 4px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media all and (max-width: 1919px) {
+  .documents {
+    padding: 104px 0 0 156px;
+  }
+  .documents__description {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+@media all and (max-width: 1536px) {
+  .documents {
+    padding: 85px 0 0 120px;
+  }
+  .documents__description {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .documents__action {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+@media all and (max-width: 1200px) {
+  .documents {
+    padding: 70px 0 0 72px;
+  }
+  .documents__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 750px) {
+  .documents {
+    padding: 210px 0 0 18px;
+  }
+  .documents__description {
+    margin-bottom: 12px;
+  }
+}/*# sourceMappingURL=documents.css.map */

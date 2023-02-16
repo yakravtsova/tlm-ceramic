@@ -97,6 +97,11 @@ const main = new Splide ( '#video__main', {
   type      : 'fade',
   rewind    : true,
   pagination: false,
+  breakpoints: {
+    750: {
+      heightRatio: 0.8,
+    }
+  },
   classes: {
     arrows: 'splide__arrows splide__arrows_place_production-main'
   }
@@ -107,8 +112,24 @@ main.mount();
 thumbnails.mount();
 
 new Splide( '#documents', {
-  perPage: 2,
+  fixedWidth: 600,
+  perPage: 4,
   perMove: 2,
+  breakpoints: {
+    1919: {
+      fixedWidth: 500,
+    },
+    1536: {
+      fixedWidth: 420,
+    },
+    1200: {
+      fixedWidth: 280,
+    },
+    600: {
+      perPage: 1,
+      perMove: 2,
+    }
+  },
   classes: {
     arrows: 'splide__arrows splide__arrows_place_documents',
   },

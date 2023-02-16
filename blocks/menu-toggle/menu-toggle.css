@@ -20,5 +20,4 @@
   #menu-toggle:checked + .header__menu-btn-container .header__menu-btn::after {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-/*# sourceMappingURL=menu-toggle.css.map */
+}/*# sourceMappingURL=menu-toggle.css.map */
