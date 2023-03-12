@@ -27,6 +27,9 @@
 @import url(./blocks/advantages/advantages.css);
 @import url(./blocks/documents/documents.css);
 @import url(./blocks/button-white/button-white.css);
+@import url(./blocks/breadcrumbs/breadcrumbs.css);
+@import url(./blocks/production-menu/production-menu.css);
+@import url(./blocks/card/card.css);
 .bold {
   font-weight: bold;
   margin: 0;

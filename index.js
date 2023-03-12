@@ -68,7 +68,7 @@ main.sync( thumbnails );
 main.mount();
 thumbnails.mount();
 
-const input = document.querySelector('.questions__input');
+const input = document.getElementById('phone-input');
 const maskOptions = {
   mask: '+ {7} (000) 000-00-00'
 };
@@ -86,11 +86,6 @@ const checkWindowSize = () => {
     handleMenuToggle(false);
   }
 }
-
-menuButton.addEventListener('click', handleMenuToggle);
-menuDropdown.addEventListener('click', () => handleMenuToggle(false));
-
-window.onresize = checkWindowSize;
 
 const yandexMapScript = document.createElement('script');
   yandexMapScript.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
@@ -129,4 +124,9 @@ const yandexMapScript = document.createElement('script');
       });
 
       myMap.geoObjects.add(myPlacemark);
+
+      menuButton.addEventListener('click', handleMenuToggle);
+      menuDropdown.addEventListener('click', () => handleMenuToggle(false));
+      
+      window.onresize = checkWindowSize;
   };

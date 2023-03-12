@@ -11,10 +11,43 @@
   font-size: 25px;
   cursor: pointer;
 
+  &_place {
+    &_card {
+      margin-right: 15px;
+    }
+  }
+
   &__img {
     width: 25px;
     height: 24px;
     margin-bottom: 4px;
+  }
+
+  &__plus {
+    width: 14px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    margin: auto;
+
+    &:after {
+      content: '';
+      width: 2px;
+      height: 14px;
+      background-color: #000;
+      display: block;
+      position: absolute;
+      left: 6px;
+      bottom: -6px;
+    }
+  }
+
+  &__minus {
+    width: 19px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    margin: auto;
   }
 }
 
@@ -23,6 +56,17 @@
     width: 45px;
     height: 45px;
     font-size: 20px;
+
+
+    &_place {
+      &_card {
+        margin-right: 13px;
+      }
+    }
+
+    &__minus {
+      width: 17px;
+    }
   }
 }
 
@@ -36,6 +80,28 @@
       width: 18px;
       height: 17px;
       margin-bottom: 0;
+    }
+
+    &_place {
+      &_card {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+
+    &__plus {
+      width: 10px;
+
+      &:after {
+        height: 10px;
+        left: 4px;
+        bottom: -4px;
+      }
+    }
+
+    &__minus {
+      width: 12px;
     }
   }
 }

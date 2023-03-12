@@ -8,6 +8,11 @@
   height: 60px;
   border-radius: 60px;
   text-transform: uppercase;
+  box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
+}
+.button-yellow_color_white {
+  background-color: #fff;
+  margin-left: 50px;
 }
 .button-yellow_place_first-line {
   display: none;
@@ -53,6 +58,9 @@
   .button-yellow_place_size {
     margin-top: 23px;
   }
+  .button-yellow_color_white {
+    margin-left: 30px;
+  }
 }
 @media all and (max-width: 1536px) {
   .button-yellow {
@@ -72,30 +80,37 @@
     font-size: 13px;
     padding: 0 22px;
   }
+  .button-yellow_color_white {
+    margin-left: 15px;
+  }
 }
 @media all and (max-width: 1200px) {
   .button-yellow {
-    display: none;
     width: 190px;
+  }
+  .button-yellow_color_white {
+    padding: 0 26px;
+    width: auto;
   }
   .button-yellow_place_first-line {
     display: block;
   }
-  .button-yellow_place_product {
-    display: block;
-  }
-  .button-yellow_place_questions {
-    display: block;
-  }
-  .button-yellow_place_production-card {
-    display: block;
+  .button-yellow_place_second-line {
+    display: none;
   }
   .button-yellow_place_size {
-    display: block;
     width: auto;
+  }
+  .button-yellow_place_card {
+    width: auto;
+    padding: 0 26px;
   }
 }
 @media all and (max-width: 1000px) {
+  .button-yellow_color_white {
+    width: 100%;
+    margin: 24px 0 0;
+  }
   .button-yellow_place_production-card {
     grid-row-start: 3;
     grid-row-end: 4;
