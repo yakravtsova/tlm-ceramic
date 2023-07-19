@@ -1,0 +1,39 @@
+.card-menu__link {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.card-menu__link_active {
+  font-weight: bold;
+}
+.card-menu__item {
+  display: flex;
+  width: auto;
+}
+
+@media all and (max-width: 1919px) {
+  .card-menu__link {
+    font-size: 16px;
+    letter-spacing: 0.001em;
+  }
+}
+@media all and (max-width: 1536px) {
+  .card-menu__link {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .card-menu__link {
+    font-size: 16px;
+  }
+  .card-menu__item {
+    justify-content: flex-start;
+  }
+}
+@media all and (max-width: 500px) {
+  .card-menu__item {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=card-menu.css.map */

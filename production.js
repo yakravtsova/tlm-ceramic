@@ -202,3 +202,4 @@ const handleShowAllText = () => {
 showAllTextButton.addEventListener('click', handleShowAllText);
 menuButton.addEventListener('click', handleMenuToggle);
 menuDropdown.addEventListener('click', () => handleMenuToggle(false));
+window.onresize = checkWindowSize;

@@ -1,6 +1,5 @@
 .splide__list {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   display: flex;
   height: 100%;
   margin: 0 !important;

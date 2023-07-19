@@ -99,8 +99,7 @@
 }
 
 .splide__list {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   display: flex;
   height: 100%;
   margin: 0 !important;
@@ -142,8 +141,7 @@
 }
 
 .splide__slide {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   box-sizing: border-box;
   flex-shrink: 0;
   list-style-type: none !important;
