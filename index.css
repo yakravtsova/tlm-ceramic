@@ -31,6 +31,8 @@
 @import url(./blocks/production-menu/production-menu.css);
 @import url(./blocks/card/card.css);
 @import url(./blocks/card-menu/card-menu.css);
+@import url(./blocks/application-card/application-card.css);
+
 .bold {
   font-weight: bold;
   margin: 0;

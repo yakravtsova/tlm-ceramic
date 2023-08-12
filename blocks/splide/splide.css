@@ -46,6 +46,9 @@
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
 }
+.splide_place_application-card {
+  margin: 60px 0 0;
+}
 .splide__track_place_products {
   box-sizing: border-box;
   width: 100%;
@@ -180,6 +183,9 @@
   padding: 0 145px;
   box-sizing: border-box;
 }
+.splide__list_place_application-card {
+  grid-template-columns: repeat(4, auto);
+}
 
 @media all and (max-width: 1919px) {
   .splide_place_products {
@@ -212,6 +218,9 @@
   .splide_place_card-menu {
     margin: 78px 175px 0;
     padding: 33px 120px;
+  }
+  .splide_place_application-card {
+    margin: 55px 0 0;
   }
   .splide__track_place_production-main {
     width: 766px;
@@ -314,6 +323,9 @@
     margin: 70px 135px 0;
     padding: 27px 55px;
   }
+  .splide_place_application-card {
+    margin: 45px 0 0;
+  }
   .splide__track_place_production-main {
     width: 613px;
     height: 489px;
@@ -397,6 +409,12 @@
     margin: 60px 35px 0;
     padding: 27px 60px;
   }
+  .splide_place_application-card {
+    width: 70%;
+    min-width: 458px;
+    margin-left: auto;
+    margin-top: 35px;
+  }
   .splide__track_place_production-main {
     width: 482px;
     height: 384px;
@@ -414,6 +432,11 @@
     grid-template-columns: 280px;
     grid-auto-columns: 280px;
     gap: 45px 0;
+  }
+  .splide__list_place_application-card {
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 25px 75px;
   }
   .splide__arrows {
     width: 74px;
@@ -667,17 +690,39 @@
   .splide_place_advantages {
     width: 260px;
   }
+  .splide__list_place_application-card {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
   .splide__arrows_place_advantages {
     width: 300px;
     right: -20px;
   }
 }
 @media all and (max-width: 500px) {
+  .splide_place_application-card {
+    margin: 35px auto 0;
+    min-width: auto;
+    width: 220px;
+    height: 300px;
+  }
   .splide__track_place_card-menu {
     width: 200px;
   }
+  .splide__track_place_application-card {
+    height: 300px;
+  }
+  .splide__arrows_place_application-card {
+    width: 300px;
+    right: -40px;
+    top: 40%;
+  }
   .splide__list_place_card-menu {
     grid-template-columns: repeat(5, 200px);
+    gap: 0;
+  }
+  .splide__list_place_application-card {
+    display: grid;
     gap: 0;
   }
 }

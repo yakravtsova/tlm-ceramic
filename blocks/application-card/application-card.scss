@@ -1,0 +1,87 @@
+.application-card {
+  padding: 80px 180px 0 280px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    height: 55px;
+
+    &_form {
+      &_square {
+        height: 45px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 38px 0 0;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media all and (max-width: 1919px) {
+  .application-card {
+    padding: 60px 180px 0 240px;
+
+    &__image {
+      height: 45px;
+      &_form {
+        &_square {
+          height: 37px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &__description {
+      margin: 28px 0 0;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+    }
+  }
+}
+
+@media all and (max-width: 1536px) {
+  .application-card {
+    padding: 46px 120px 0 190px;
+
+    &__image {
+      height: 36px;
+      &_form {
+        &_square {
+          height: 30px;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    &__description {
+      margin: 23px 0 0;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .application-card {
+    padding: 32px 45px 0 72px;
+    display: flex;
+
+    &__description {
+      margin-top: 28px;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media all and (max-width: 750px) {
+  .application-card {
+    padding: 32px 15px 0 20px;
+  }
+}

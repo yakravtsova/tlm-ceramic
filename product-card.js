@@ -48,6 +48,22 @@ new Splide("#card-menu", {
   },
 }).mount();
 
+new Splide("#application-card", {
+  classes: {
+    arrows: "splide__arrows splide__arrows_place_application-card",
+  },
+  fixedWidth: 220,
+  perPage: 2,
+  perMove: 2,
+  mediaQuery: "min",
+  breakpoints: {
+    501: {
+      destroy: true,
+    },
+  },
+  pagination: false,
+}).mount();
+
 Array.from(productionMenuButton).forEach((button, i) => {
   button.addEventListener("click", () => {
     productionMenuLine[i].classList.toggle("production-menu__line_on");
