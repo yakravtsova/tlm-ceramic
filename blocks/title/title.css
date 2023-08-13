@@ -4,6 +4,10 @@
   line-height: 1.5;
   margin: 0;
 }
+.title_type_info {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
 .title_place_production {
   margin-left: 184px;
 }
@@ -12,6 +16,10 @@
   .title {
     font-size: 50px;
   }
+  .title_type_info {
+    font-size: 25px;
+    letter-spacing: 0.05em;
+  }
   .title_place_production {
     margin-left: 155px;
   }
@@ -19,6 +27,9 @@
 @media all and (max-width: 1536px) {
   .title {
     font-size: 40px;
+  }
+  .title_type_info {
+    font-size: 20px;
   }
   .title_place_production {
     margin-left: 120px;

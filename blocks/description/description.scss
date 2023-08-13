@@ -46,6 +46,17 @@
         margin: 0;
       }
     }
+
+    &_card {
+      width: 590px;
+      margin-left: auto;
+      line-height: 1.65;
+      margin-top: 30px;
+
+      &:first-of-type {
+        margin-top: 40px;
+      }
+    }
   }
 
   &:last-child {
@@ -71,6 +82,16 @@
       &_about {
         width: 545px;
         margin-bottom: 38px;
+      }
+
+      &_card {
+        width: 500px;
+        line-height: 1.6;
+        margin-top: 20px;
+
+        &:first-of-type {
+          margin-top: 34px;
+        }
       }
     }
   }
@@ -99,6 +120,15 @@
 
       &_team {
         width: 430px;
+      }
+
+      &_card {
+        width: 400px;
+        margin-top: 18px;
+
+        &:first-of-type {
+          margin-top: 27px;
+        }
       }
     }
   }
@@ -140,6 +170,16 @@
       &_about {
         letter-spacing: .05em;
       }
+
+      &_card {
+        width: 310px;
+        margin-top: 25px;
+        line-height: 1.4;
+
+        &:first-of-type {
+          margin-top: 37px;
+        }
+      }
     }
   }
 }
@@ -150,6 +190,16 @@
     &_place {
       &_team {
         margin-bottom: 35px;
+      }
+
+      &_card {
+        width: 100%;
+        margin-top: 15px;
+        line-height: 1.4;
+
+        &:first-of-type {
+          margin-top: 22px;
+        }
       }
     }
   }

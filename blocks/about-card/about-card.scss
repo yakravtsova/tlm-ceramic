@@ -1,0 +1,29 @@
+.about-card {
+  padding: 85px 290px 0 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 1919px) {
+  .about-card {
+    padding: 57px 240px 0 240px;
+  }
+}
+
+@media all and (max-width: 1536px) {
+  .about-card {
+    padding: 51px 195px 0 190px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .about-card {
+    padding: 89px 120px 0 72px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .about-card {
+    padding: 35px 20px 0;
+  }
+}

@@ -40,6 +40,15 @@
 .description_place_about-production:first-child {
   margin: 0;
 }
+.description_place_card {
+  width: 590px;
+  margin-left: auto;
+  line-height: 1.65;
+  margin-top: 30px;
+}
+.description_place_card:first-of-type {
+  margin-top: 40px;
+}
 .description:last-child {
   margin-bottom: 0;
 }
@@ -59,6 +68,14 @@
   .description_place_about {
     width: 545px;
     margin-bottom: 38px;
+  }
+  .description_place_card {
+    width: 500px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  .description_place_card:first-of-type {
+    margin-top: 34px;
   }
 }
 @media all and (max-width: 1536px) {
@@ -80,6 +97,13 @@
   }
   .description_place_team {
     width: 430px;
+  }
+  .description_place_card {
+    width: 400px;
+    margin-top: 18px;
+  }
+  .description_place_card:first-of-type {
+    margin-top: 27px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -110,9 +134,25 @@
   .description_place_about {
     letter-spacing: 0.05em;
   }
+  .description_place_card {
+    width: 310px;
+    margin-top: 25px;
+    line-height: 1.4;
+  }
+  .description_place_card:first-of-type {
+    margin-top: 37px;
+  }
 }
 @media all and (max-width: 425px) {
   .description_place_team {
     margin-bottom: 35px;
+  }
+  .description_place_card {
+    width: 100%;
+    margin-top: 15px;
+    line-height: 1.4;
+  }
+  .description_place_card:first-of-type {
+    margin-top: 22px;
   }
 }/*# sourceMappingURL=description.css.map */

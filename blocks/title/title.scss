@@ -4,6 +4,13 @@
   line-height: 1.5;
   margin: 0;
 
+  &_type {
+    &_info {
+      font-size: 28px;
+      letter-spacing: .1em;
+    }
+  }
+
   &_place {
     &_production {
       margin-left: 184px;
@@ -14,6 +21,13 @@
 @media all and (max-width: 1919px) {
   .title {
     font-size: 50px;
+
+    &_type {
+      &_info {
+        font-size: 25px;
+        letter-spacing: .05em;
+      }
+    }
 
     &_place {
       &_production {
@@ -26,6 +40,12 @@
 @media all and (max-width: 1536px) {
   .title {
     font-size: 40px;
+
+    &_type {
+      &_info {
+        font-size: 20px;
+      }
+    }
 
     &_place {
       &_production {
