@@ -1,0 +1,115 @@
+.properties {
+  padding: 80px 360px 0 280px;
+  display: flex;
+  flex-direction: column;
+}
+.properties__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 520px;
+  margin-top: 43px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.properties__item {
+  display: flex;
+  margin-top: 50px;
+}
+.properties__item:first-of-type {
+  margin-top: 0;
+}
+.properties__title {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  width: 50%;
+}
+.properties__value {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+@media all and (max-width: 1919px) {
+  .properties {
+    padding: 65px 310px 0 240px;
+  }
+  .properties__container {
+    width: 430px;
+    margin-top: 35px;
+  }
+  .properties__item {
+    margin-top: 45px;
+  }
+  .properties__title {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+  .properties__value {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+}
+@media all and (max-width: 1536px) {
+  .properties {
+    padding: 51px 244px 0 190px;
+  }
+  .properties__container {
+    grid-template-rows: 48px;
+    width: 350px;
+    margin-top: 25px;
+  }
+  .properties__item {
+    margin-top: 35px;
+  }
+  .properties__title {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+  .properties__value {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+}
+@media all and (max-width: 1200px) {
+  .properties {
+    padding: 72px 82px 0 72px;
+  }
+  .properties__container {
+    grid-template-rows: 45px;
+    width: 350px;
+    margin-top: 34px;
+  }
+  .properties__item {
+    margin-top: 30px;
+  }
+  .properties__title {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+  .properties__value {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+}
+@media all and (max-width: 750px) {
+  .properties {
+    padding: 35px 20px 0;
+  }
+  .properties__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 22px;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .properties__item {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .properties__title {
+    margin-bottom: 8px;
+  }
+}/*# sourceMappingURL=properties.css.map */

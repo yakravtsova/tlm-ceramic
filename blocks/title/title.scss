@@ -59,6 +59,12 @@
   .title {
     font-size: 27px;
 
+    &_type {
+      &_info {
+        font-size: 20px;
+      }
+    }
+
     &_place {
       &_production {
         margin-left: 73px;

@@ -39,6 +39,9 @@
   .title {
     font-size: 27px;
   }
+  .title_type_info {
+    font-size: 20px;
+  }
   .title_place_production {
     margin-left: 73px;
   }
