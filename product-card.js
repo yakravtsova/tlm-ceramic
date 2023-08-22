@@ -64,6 +64,29 @@ new Splide("#application-card", {
   pagination: false,
 }).mount();
 
+new Splide("#advantages-card", {
+  mediaQuery: "min",
+  breakpoints: {
+    801: {
+      destroy: true,
+    },
+    605: {
+      fixedWidth: 510,
+      perPage: 7,
+      perMove: 7,
+    },
+    320: {
+      fixedWidth: 280,
+      perPage: 1,
+      perMove: 4,
+    },
+  },
+  classes: {
+    arrows: "splide__arrows splide__arrows_place_advantages-card",
+  },
+  pagination: false,
+}).mount();
+
 Array.from(productionMenuButton).forEach((button, i) => {
   button.addEventListener("click", () => {
     productionMenuLine[i].classList.toggle("production-menu__line_on");

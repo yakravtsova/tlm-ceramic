@@ -34,7 +34,7 @@
 @import url(./blocks/about-card/about-card.css);
 @import url(./blocks/properties/properties.css);
 @import url(./blocks/application-card/application-card.css);
-
+@import url(./blocks/advantages-card/advantages-card.css);
 .bold {
   font-weight: bold;
   margin: 0;
