@@ -77,8 +77,8 @@ new Splide("#advantages-card", {
     },
     320: {
       fixedWidth: 280,
-      perPage: 1,
-      perMove: 4,
+      perPage: 7,
+      perMove: 7,
     },
   },
   classes: {
