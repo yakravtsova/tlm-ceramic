@@ -9,6 +9,14 @@
       font-size: 28px;
       letter-spacing: .1em;
     }
+
+    &_second-line {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: .05em;
+    }
   }
 
   &_place {
@@ -26,6 +34,10 @@
       &_info {
         font-size: 25px;
         letter-spacing: .05em;
+      }
+
+      &_second-line {
+        font-size: 32px;
       }
     }
 
@@ -45,6 +57,10 @@
       &_info {
         font-size: 20px;
       }
+
+      &_second-line {
+        font-size: 24px;
+      }
     }
 
     &_place {
@@ -63,6 +79,10 @@
       &_info {
         font-size: 20px;
       }
+
+      &_second-line {
+        font-size: 16px;
+      }
     }
 
     &_place {
@@ -76,6 +96,18 @@
 @media all and (max-width: 750px) {
   .title {
     font-size: 22px;
+
+    &_type {
+      &_info {
+        line-height: 1.15;
+      }
+
+      &_second-line {
+        font-size: 16px;
+        margin-left: 19px;
+        margin-top: 5px;
+      }
+    }
 
     &_place {
       &_team {
@@ -99,6 +131,12 @@
       &_documents {
         line-height: 1.2;
         margin-right: 90px;
+      }
+
+      &_contacts-product-card {
+        max-width: 200px;
+        margin-left: 19px;
+        line-height: 1.2;
       }
     }
   }

@@ -43,6 +43,11 @@
   width: 1001px;
   height: 485px;
 }
+.contacts__info {
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
 
 @media all and (max-width: 1919px) {
   .contacts {
@@ -66,6 +71,9 @@
     width: 834px;
     height: 405px;
   }
+  .contacts__info {
+    font-size: 20px;
+  }
 }
 @media all and (max-width: 1536px) {
   .contacts {
@@ -87,6 +95,9 @@
   .contacts__link {
     font-size: 12px;
     letter-spacing: 0.05em;
+  }
+  .contacts__info {
+    font-size: 16px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -110,6 +121,10 @@
     width: 424px;
     height: 250px;
   }
+  .contacts__info {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 @media all and (max-width: 750px) {
   .contacts {
@@ -124,6 +139,9 @@
     width: 100%;
   }
   .contacts__list {
+    margin-left: 19px;
+  }
+  .contacts__info {
     margin-left: 19px;
   }
 }/*# sourceMappingURL=contacts.css.map */

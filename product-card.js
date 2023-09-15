@@ -64,6 +64,56 @@ new Splide("#application-card", {
   pagination: false,
 }).mount();
 
+const videoThumbnails = new Splide("#video__thumbnails", {
+  fixedWidth: 432,
+  fixedHeight: 354,
+  height: 734,
+  gap: 26,
+  focus: 0,
+  direction: "ttb",
+  isNavigation: true,
+  pagination: false,
+  arrows: false,
+  breakpoints: {
+    1919: {
+      fixedWidth: 360,
+      fixedHeight: 295,
+      gap: 21,
+      height: 612,
+    },
+    1536: {
+      fixedWidth: 288,
+      fixedHeight: 236,
+      gap: 16,
+      height: 489,
+    },
+    1200: {
+      fixedWidth: 228,
+      fixedHeight: 187,
+      gap: 10,
+      height: 384,
+    },
+  },
+});
+
+const videoMain = new Splide("#video__main", {
+  type: "fade",
+  rewind: true,
+  pagination: false,
+  breakpoints: {
+    750: {
+      heightRatio: 0.8,
+    },
+  },
+  classes: {
+    arrows: "splide__arrows splide__arrows_place_production-main",
+  },
+});
+
+videoMain.sync(videoThumbnails);
+videoMain.mount();
+videoThumbnails.mount();
+
 new Splide("#advantages-card", {
   mediaQuery: "min",
   breakpoints: {
@@ -107,6 +157,54 @@ const checkWindowSize = () => {
   if (window.innerWidth > 1199 && menuCheckbox.checked) {
     handleMenuToggle(false);
   }
+};
+
+const yandexMapScript = document.createElement("script");
+yandexMapScript.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+
+if (yandexMapScript.readyState) {
+  //IE
+  yandexMapScript.onreadystatechange = () => {
+    if (
+      yandexMapScript.readyState === "loaded" ||
+      yandexMapScript.readyState === "complete"
+    ) {
+      yandexMapScript.onreadystatechange = null;
+      ymaps.ready(init);
+    }
+  };
+} else {
+  //Others
+  yandexMapScript.onload = () => {
+    ymaps.ready(init);
+  };
+}
+document.getElementsByTagName("head")[0].appendChild(yandexMapScript);
+
+let myMap, myPlacemark;
+
+const init = () => {
+  const coords = [59.958264, 30.313757];
+
+  myMap = new ymaps.Map("contacts__map", {
+    center: coords,
+    zoom: 16,
+    controls: [],
+  });
+
+  myMap.behaviors.disable("drag");
+  myMap.behaviors.disable("scrollZoom");
+
+  myPlacemark = new ymaps.Placemark(coords, {
+    hintContent: "ООО &laquo;ТЛМ Групп&raquo;",
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+
+  menuButton.addEventListener("click", handleMenuToggle);
+  menuDropdown.addEventListener("click", () => handleMenuToggle(false));
+
+  window.onresize = checkWindowSize;
 };
 
 menuButton.addEventListener("click", handleMenuToggle);

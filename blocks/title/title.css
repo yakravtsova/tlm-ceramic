@@ -8,6 +8,13 @@
   font-size: 28px;
   letter-spacing: 0.1em;
 }
+.title_type_second-line {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
 .title_place_production {
   margin-left: 184px;
 }
@@ -20,6 +27,9 @@
     font-size: 25px;
     letter-spacing: 0.05em;
   }
+  .title_type_second-line {
+    font-size: 32px;
+  }
   .title_place_production {
     margin-left: 155px;
   }
@@ -30,6 +40,9 @@
   }
   .title_type_info {
     font-size: 20px;
+  }
+  .title_type_second-line {
+    font-size: 24px;
   }
   .title_place_production {
     margin-left: 120px;
@@ -42,6 +55,9 @@
   .title_type_info {
     font-size: 20px;
   }
+  .title_type_second-line {
+    font-size: 16px;
+  }
   .title_place_production {
     margin-left: 73px;
   }
@@ -49,6 +65,14 @@
 @media all and (max-width: 750px) {
   .title {
     font-size: 22px;
+  }
+  .title_type_info {
+    line-height: 1.15;
+  }
+  .title_type_second-line {
+    font-size: 16px;
+    margin-left: 19px;
+    margin-top: 5px;
   }
   .title_place_team {
     width: 50%;
@@ -67,5 +91,10 @@
   .title_place_documents {
     line-height: 1.2;
     margin-right: 90px;
+  }
+  .title_place_contacts-product-card {
+    max-width: 200px;
+    margin-left: 19px;
+    line-height: 1.2;
   }
 }/*# sourceMappingURL=title.css.map */
