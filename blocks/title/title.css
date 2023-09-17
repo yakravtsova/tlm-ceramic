@@ -18,6 +18,10 @@
 .title_place_production {
   margin-left: 184px;
 }
+.title_place_cart {
+  margin: 26px 0 0 180px;
+  letter-spacing: 0.06em;
+}
 
 @media all and (max-width: 1919px) {
   .title {
@@ -33,6 +37,9 @@
   .title_place_production {
     margin-left: 155px;
   }
+  .title_place_cart {
+    margin: 22px 0 0 155px;
+  }
 }
 @media all and (max-width: 1536px) {
   .title {
@@ -47,6 +54,9 @@
   .title_place_production {
     margin-left: 120px;
   }
+  .title_place_cart {
+    margin: 22px 0 0 123px;
+  }
 }
 @media all and (max-width: 1200px) {
   .title {
@@ -60,6 +70,9 @@
   }
   .title_place_production {
     margin-left: 73px;
+  }
+  .title_place_cart {
+    display: none;
   }
 }
 @media all and (max-width: 750px) {

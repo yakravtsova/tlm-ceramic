@@ -23,6 +23,11 @@
     &_production {
       margin-left: 184px;
     }
+
+    &_cart {
+      margin: 26px 0 0 180px;
+      letter-spacing: .06em;
+    }
   }
 }
 
@@ -44,6 +49,10 @@
     &_place {
       &_production {
         margin-left: 155px;
+      }
+
+      &_cart {
+        margin: 22px 0 0 155px;
       }
     }
   }
@@ -67,6 +76,10 @@
       &_production {
         margin-left: 120px;
       }
+
+      &_cart {
+        margin: 22px 0 0 123px;
+      }
     }
   }
 }
@@ -88,6 +101,10 @@
     &_place {
       &_production {
         margin-left: 73px;
+      }
+
+      &_cart {
+        display: none;
       }
     }
   }
