@@ -9,6 +9,7 @@
   border-radius: 60px;
   text-transform: uppercase;
   box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
   &_color {
     &_white {
@@ -49,6 +50,14 @@
     &_about-production {
       display: none;
     }
+
+    &_cart {
+      letter-spacing: .06em;
+      font-size: 24px;
+      height: 73px;
+      padding: 0 70px;
+      margin-left: 80px;
+    }
   }
 }
 
@@ -69,6 +78,14 @@
 
       &_size {
         margin-top: 23px;
+      }
+
+      &_cart {
+        letter-spacing: .03em;
+        font-size: 22px;
+        height: 61px;
+        padding: 0 52px;
+        margin-left: 60px;
       }
     }
 
@@ -99,6 +116,14 @@
         letter-spacing: .01em;
         font-size: 13px;
         padding: 0 22px;
+      }
+
+      &_cart {
+        letter-spacing: .01em;
+        font-size: 18px;
+        height: 49px;
+        padding: 0 42px;
+        margin-left: 50px;
       }
     }
 
@@ -138,6 +163,10 @@
         width: auto;
         padding: 0 26px;
       }
+
+      &_cart {
+        width: auto;
+      }
     }
   }
 }
@@ -171,6 +200,14 @@
         letter-spacing: .06em;
         height: 34px;
       }
+
+      &_cart {
+        height: 38px;
+        font-size: 14px;
+        letter-spacing: .05em;
+        padding: 0 26px;
+        margin-left: 28px;
+      }
     }
   }
 }
@@ -190,6 +227,10 @@
 
       &_about-production {
         display: none;
+      }
+
+      &_cart {
+        margin: 50px 0 0;
       }
     }
   }

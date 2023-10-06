@@ -283,4 +283,7 @@
   .card__wrap:last-of-type {
     margin-top: 28px;
   }
+  .card__quantity {
+    margin-right: 24px;
+  }
 }/*# sourceMappingURL=card.css.map */

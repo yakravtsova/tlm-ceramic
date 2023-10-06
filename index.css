@@ -37,6 +37,8 @@
 @import url(./blocks/advantages-card/advantages-card.css);
 @import url(./blocks/subtitle/subtitle.css);
 @import url(./blocks/face-menu/face-menu.css);
+@import url(./blocks/cart/cart.css);
+@import url(./blocks/summary/summary.css);
 .bold {
   font-weight: bold;
   margin: 0;

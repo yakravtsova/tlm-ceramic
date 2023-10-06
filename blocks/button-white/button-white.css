@@ -14,6 +14,9 @@
 .button-white_place_card {
   margin-right: 15px;
 }
+.button-white_place_card:last-of-type {
+  margin-right: 0;
+}
 .button-white__img {
   width: 25px;
   height: 24px;
