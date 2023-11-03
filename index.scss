@@ -44,3 +44,31 @@
   font-weight: bold;
   margin: 0;
 }
+
+.br {
+  display: block;
+  &_width {
+    &_500 {
+      display: none;
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .br {
+    &_width {
+      &_1200 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .br {
+    &_width {
+      &_500 {
+        display: block;
+      }
+    }
+  }
+}

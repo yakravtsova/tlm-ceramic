@@ -58,6 +58,15 @@
       padding: 0 70px;
       margin-left: 80px;
     }
+
+    &_order {
+      height: 73px;
+      font-size: 24px;
+      letter-spacing: .07em;
+      padding: 0 70px;
+      margin-left: 115px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -86,6 +95,15 @@
         height: 61px;
         padding: 0 52px;
         margin-left: 60px;
+      }
+
+      &_order {
+        height: 61px;
+        font-size: 21px;
+        letter-spacing: .06em;
+        padding: 0 50px;
+        margin-left: 90px;
+        margin-top: 11px;
       }
     }
 
@@ -124,6 +142,15 @@
         height: 49px;
         padding: 0 42px;
         margin-left: 50px;
+      }
+
+      &_order {
+        height: 49px;
+        font-size: 18px;
+        letter-spacing: .02em;
+        padding: 0 43px;
+        margin-left: 70px;
+        margin-top: 10px;
       }
     }
 
@@ -166,6 +193,15 @@
 
       &_cart {
         width: auto;
+      }
+
+      &_order {
+        width: auto;
+        height: 38px;
+        margin-top: -3px;
+        margin-left: 25px;
+        font-size: 14px;
+        padding: 0 20px;
       }
     }
   }
@@ -231,6 +267,13 @@
 
       &_cart {
         margin: 50px 0 0;
+      }
+
+      &_order {
+        letter-spacing: .06em;
+        padding: 0 25px;
+        margin-left: 0;
+        margin-top: 24px;
       }
     }
   }

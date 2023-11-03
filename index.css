@@ -42,4 +42,22 @@
 .bold {
   font-weight: bold;
   margin: 0;
+}
+
+.br {
+  display: block;
+}
+.br_width_500 {
+  display: none;
+}
+
+@media all and (max-width: 1200px) {
+  .br_width_1200 {
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .br_width_500 {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

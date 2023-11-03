@@ -21,6 +21,12 @@ const subItems = {
   2: subItemFacade,
 };
 
+const input = document.getElementById("phone-input");
+const maskOptions = {
+  mask: "+ {7} (000) 000-00-00",
+};
+const mask = IMask(input, maskOptions);
+
 new Splide("#card-menu", {
   pagination: false,
   classes: {

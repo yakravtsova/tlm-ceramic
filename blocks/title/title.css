@@ -22,6 +22,10 @@
   margin: 26px 0 0 180px;
   letter-spacing: 0.06em;
 }
+.title_place_order {
+  margin: 26px 0 0 180px;
+  letter-spacing: 0.06em;
+}
 
 @media all and (max-width: 1919px) {
   .title {
@@ -38,6 +42,9 @@
     margin-left: 155px;
   }
   .title_place_cart {
+    margin: 22px 0 0 155px;
+  }
+  .title_place_order {
     margin: 22px 0 0 155px;
   }
 }
@@ -57,6 +64,9 @@
   .title_place_cart {
     margin: 22px 0 0 123px;
   }
+  .title_place_order {
+    margin: 22px 0 0 123px;
+  }
 }
 @media all and (max-width: 1200px) {
   .title {
@@ -73,6 +83,9 @@
   }
   .title_place_cart {
     display: none;
+  }
+  .title_place_order {
+    margin: 18px 0 0 74px;
   }
 }
 @media all and (max-width: 750px) {
@@ -109,5 +122,10 @@
     max-width: 200px;
     margin-left: 19px;
     line-height: 1.2;
+  }
+  .title_place_order {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 27px;
   }
 }/*# sourceMappingURL=title.css.map */

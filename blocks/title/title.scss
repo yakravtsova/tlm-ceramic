@@ -28,6 +28,11 @@
       margin: 26px 0 0 180px;
       letter-spacing: .06em;
     }
+
+    &_order {
+      margin: 26px 0 0 180px;
+      letter-spacing: .06em;
+    }
   }
 }
 
@@ -52,6 +57,10 @@
       }
 
       &_cart {
+        margin: 22px 0 0 155px;
+      }
+
+      &_order {
         margin: 22px 0 0 155px;
       }
     }
@@ -80,6 +89,10 @@
       &_cart {
         margin: 22px 0 0 123px;
       }
+
+      &_order {
+        margin: 22px 0 0 123px;
+      }
     }
   }
 }
@@ -105,6 +118,10 @@
 
       &_cart {
         display: none;
+      }
+
+      &_order {
+        margin: 18px 0 0 74px;
       }
     }
   }
@@ -154,6 +171,12 @@
         max-width: 200px;
         margin-left: 19px;
         line-height: 1.2;
+      }
+
+      &_order {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 27px;
       }
     }
   }

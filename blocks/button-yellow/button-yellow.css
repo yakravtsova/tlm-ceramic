@@ -49,6 +49,14 @@
   padding: 0 70px;
   margin-left: 80px;
 }
+.button-yellow_place_order {
+  height: 73px;
+  font-size: 24px;
+  letter-spacing: 0.07em;
+  padding: 0 70px;
+  margin-left: 115px;
+  margin-top: 10px;
+}
 
 @media all and (max-width: 1919px) {
   .button-yellow {
@@ -72,6 +80,14 @@
     height: 61px;
     padding: 0 52px;
     margin-left: 60px;
+  }
+  .button-yellow_place_order {
+    height: 61px;
+    font-size: 21px;
+    letter-spacing: 0.06em;
+    padding: 0 50px;
+    margin-left: 90px;
+    margin-top: 11px;
   }
   .button-yellow_color_white {
     margin-left: 30px;
@@ -102,6 +118,14 @@
     padding: 0 42px;
     margin-left: 50px;
   }
+  .button-yellow_place_order {
+    height: 49px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    padding: 0 43px;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
   .button-yellow_color_white {
     margin-left: 15px;
   }
@@ -129,6 +153,14 @@
   }
   .button-yellow_place_cart {
     width: auto;
+  }
+  .button-yellow_place_order {
+    width: auto;
+    height: 38px;
+    margin-top: -3px;
+    margin-left: 25px;
+    font-size: 14px;
+    padding: 0 20px;
   }
 }
 @media all and (max-width: 1000px) {
@@ -175,6 +207,12 @@
   }
   .button-yellow_place_cart {
     margin: 50px 0 0;
+  }
+  .button-yellow_place_order {
+    letter-spacing: 0.06em;
+    padding: 0 25px;
+    margin-left: 0;
+    margin-top: 24px;
   }
 }
 @media all and (max-width: 425px) {

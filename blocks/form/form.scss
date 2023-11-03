@@ -8,10 +8,35 @@
   flex-direction: column;
   align-items: flex-start;
 
+  &_place {
+    &_order {
+      margin: 0;
+      padding: 42px 0 0 180px;
+      width: 100%;
+    }
+  }
+
   &__title {
     font-size: 25px;
     letter-spacing: .02em;
     margin: 0 0 50px;
+
+    &_place {
+      &_order {
+        margin-bottom: 30px;
+      }
+
+      &_text-fieldset {
+        margin-bottom: 50px;
+      }
+
+      &_delivery {
+        font-size: 18px;
+        letter-spacing: .05em;
+        margin-top: 47px;
+        margin-bottom: 35px;
+      }
+    }
   }
 
   &__label {
@@ -20,6 +45,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    &_place {
+      &_order {
+        margin: 50px 0 8px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__result {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1.62;
+    text-align: right;
+    margin: 0;
+  }
+
+  &__total {
+    font-size: 30px;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    margin: 35px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &_place {
+      &_to-address {
+        margin-bottom: 5px;
+      }
+
+      &_result {
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+  &__delivery {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    &_active {
+      display: flex;
+    }
+    &_method {
+      &_to-address {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__delivery-price {
+    margin-left: 114px;
+  }
+
+  &__map {
+    width: 929px;
+    height: 486px;
+    margin: 210px 0 6px;
   }
 
   &__input {
@@ -32,6 +126,17 @@
     box-sizing: border-box;
     font-size: 18px;
     letter-spacing: .04em;
+
+    &_place {
+      &_order {
+        margin: 0;
+        width: 766px;
+      }
+    }
+
+    &_no-label {
+      margin-top: 0;
+    }
   }
 
   &__checkbox {
@@ -64,18 +169,65 @@
     }
   }
 
-  &__approval {
+  &__container {
+    width: 100%;
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &_place {
+      &_physic-data {
+        margin: 0;
+        padding: 0;
+      }
+
+      &_legal-data {
+
+      }
+    }
+
+    &_direction {
+      &_row {
+        flex-direction: row;
+        margin-top: 94px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__choose-field {
     margin: 30px 0 55px;
     display: flex;
-    width: 501px;
-    justify-content: space-between;
+    align-items: center;
+
+    &_place {
+      &_order {
+        margin: 0 0 9px;
+        justify-content: flex-start;
+        width: auto;
+      }
+    }
 
     &-label {
       font-size: 16px;
       display: inline-block;
       width: 422px;
-      line-height: 20px;
+      line-height: 23px;
       letter-spacing: .05em;
+      margin-left: 40px;
+      margin-bottom: 2px;
+
+      &_place {
+        &_order {
+          font-size: 18px;
+          width: auto;
+          margin-left: 28px;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 
@@ -96,16 +248,54 @@
 
 @media all and (max-width: 1919px) {
   .form {
-    width: 423px;
+    width: 501px;
     margin-top: 73px;
+    &_place {
+      &_order {
+        width: 100%;
+        margin: 0;
+        padding: 30px 0 0 158px;
+      }
+    }
 
     &__title {
       font-size: 22px;
       margin-bottom: 40px;
+      letter-spacing: .01em;
+
+      &_place {
+        &_order {
+          margin-bottom: 24px;
+        }
+
+        &_delivery {
+          font-size: 15px;
+          letter-spacing: .05em;
+          margin-top: 40px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &__map {
+      width: 765px;
+      height: 400px;
+      margin: 170px 0 8px;
     }
 
     &__label {
       font-size: 17px;
+
+      &_place {
+        &_order {
+          font-size: 16px;
+          margin: 41px 0 0;
+
+          &:first-of-type {
+            margin-top: 40px;
+          }
+        }
+      }
     }
 
     &__input {
@@ -114,17 +304,67 @@
       margin-top: 12px;
       font-size: 16px;
       letter-spacing: .02em;
+
+      &_place {
+        &_order {
+          margin-top: 8px;
+          width: 638px;
+          font-size: 16px;
+          letter-spacing: .02em;
+        }
+      }
+
+      &_no-label {
+        margin-top: 0;
+      }
     }
 
-    &__approval {
+    &__choose-field {
       margin-top: 20px;
       margin-bottom: 45px;
-      width: 100%;
+      &_place {
+        &_order {
+          margin: 0 0 3px;
+        }
+      }
 
       &-label {
         font-size: 14px;
         width: 360px;
+        margin-left: 34px;
+        line-height: 18px;
+
+        &_place {
+          &_order {
+            margin-left: 23px;
+            margin-top: 1px;
+            letter-spacing: .01em;
+            font-size: 16px;
+            width: auto;
+          }
+        }
       }
+    }
+
+    &__container {
+      margin-bottom: 46px;
+
+      &_direction {
+        &_row {
+          margin-top: 88px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__result {
+      font-size: 22px;
+      letter-spacing: .02em;
+    }
+
+    &__total {
+      letter-spacing: .05em;
+      font-size: 25px;
     }
 
     &__link {
@@ -151,6 +391,26 @@
     &__wrap {
       margin-top: 27px;
     }
+
+    &__delivery {
+      margin-bottom: 50px;
+
+      &_method {
+        &_to-address {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__delivery-price {
+      margin-left: 95px;
+    }
+
+    &__paragraph {
+      margin: 28px 0 25px;
+      font-size: 16px;
+      letter-spacing: .01em;
+    }
   }
 }
 
@@ -159,13 +419,60 @@
     width: 344px;
     margin-top: 58px;
 
+    &_place {
+      &_order {
+        width: 100%;
+        margin: 0;
+        padding: 25px 0 0 121px;
+      }
+    }
+
     &__title {
       font-size: 18px;
       margin-bottom: 31px;
+
+      &_place {
+        &_order {
+          margin-bottom: 16px;
+        }
+
+        &_delivery {
+          font-size: 12px;
+          margin-top: 32px;
+          margin-bottom: 20px;
+        }
+      }
     }
 
     &__label {
       font-size: 13px;
+
+      &_place {
+        &_order {
+          margin-top: 32px;
+          &:first-of-type {
+            margin-top: 29px;
+          }
+        }
+      }
+    }
+
+    &__result {
+      font-size: 18px;
+    }
+
+    &__map {
+      width: 611px;
+      height: 320px;
+      margin: 138px 0 0;
+    }
+
+    &__delivery {
+      margin-bottom: 42px;
+
+      &-price {
+        margin-left: 75px;
+      }
     }
 
     &__input {
@@ -174,18 +481,66 @@
       margin-top: 11px;
       font-size: 12px;
       letter-spacing: .05em;
+
+      &_place {
+        &_order {
+          margin-top: 7px;
+          width: 513px;
+        }
+      }
+
+      &_no-label {
+        margin: 0;
+      }
     }
 
-    &__approval {
+    &__choose-field {
       margin-top: 15px;
       margin-bottom: 33px;
+
+      &_place {
+        &_order {
+          margin-bottom: 1px;
+          margin-top: 0;
+        }
+      }
 
       &-label {
         font-size: 12px;
         letter-spacing: .01em;
-        line-height: 18px;
+        line-height: 16px;
         width: 295px;
+        margin-left: 28px;
+
+        &_place {
+          &_order {
+            width: auto;
+            margin-left: 18px;
+            letter-spacing: .05em;
+          }
+        }
       }
+    }
+
+    &__container {
+      margin-bottom: 36px;
+
+      &_place {
+        &_physic-data {
+          margin-bottom: 0;
+        }
+      }
+
+      &_direction {
+        &_row {
+          margin-top: 62px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__total {
+      font-size: 20px;
     }
 
     &__link {
@@ -211,6 +566,18 @@
     &__wrap {
       margin-top: 22px;
     }
+
+    &__paragraph {
+      margin: 25px 0 25px;
+      font-size: 12px;
+      letter-spacing: .05em;
+
+      &_place {
+        &_to-address {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
@@ -219,14 +586,47 @@
     width: 321px;
     margin-top: 31px;
 
+    &_place {
+      &_order {
+        margin: 0;
+        padding: 22px 0 0 74px;
+      }
+    }
+
+    &_place {
+      &_order {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
     &__title {
       font-size: 16px;
       letter-spacing: .05em;
       margin-bottom: 18px;
+
+      &_place {
+        &_order {
+          font-size: 18px;
+          margin-bottom: 16px;
+        }
+
+        &_delivery {
+          font-size: 14px;
+          margin-top: 25px;
+          margin-bottom: 17px;
+        }
+      }
     }
 
     &__label {
       font-size: 14px;
+
+      &_place {
+        &_order {
+          margin-top: 36px;
+        }
+      }
     }
 
     &__input {
@@ -234,15 +634,38 @@
       font-size: 14px;
       padding: 5px 0;
       margin-top: 7px;
+
+      &_place {
+        &_order {
+          width: 100%;
+          max-width: 512px;
+          margin-top: 10px;
+        }
+      }
     }
 
-    &__approval {
+    &__choose-field {
       margin-bottom: 27px;
+
+      &_place {
+        &_order {
+          margin-bottom: 6px;
+        }
+      }
 
       &-label {
         font-size: 11px;
         width: 271px;
         line-height: 14px;
+        margin-left: 20px;
+
+        &_place {
+          &_order {
+            font-size: 14px;
+            width: auto;
+            margin-bottom: -2px;
+          }
+        }
       }
     }
 
@@ -253,6 +676,54 @@
     &__wrap {
       margin-top: 20px;
     }
+
+    &__container {
+      &_place {
+        &_physic-data {
+          margin-bottom: 0;
+        }
+      }
+      &_direction {
+        &_row {
+          margin-top: 82px;
+        }
+      }
+    }
+
+    &__total {
+      margin-left: 18px;
+      letter-spacing: .01em;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    &__paragraph {
+      margin-top: 24px;
+      font-size: 14px;
+      letter-spacing: .05em;
+      &_place {
+        &_to-address {
+
+        }
+      }
+    }
+
+    &__delivery {
+      &_method {
+        &_to-point {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__map {
+      margin-left: auto;
+      margin-top: 0;
+      width: 424px;
+      height: 250px;
+    }
   }
 }
 
@@ -261,31 +732,139 @@
     width: 100%;
     margin-top: 41px;
 
+    &_place {
+      &_order {
+        margin: 0;
+        padding: 28px 20px 0 20px;
+      }
+    }
+
     &__title {
       font-size: 14px;
       letter-spacing: .05em;
       line-height: 18px;
       margin-bottom: 21px;
+
+      &_place {
+        &_order {
+          font-size: 16px;
+          margin-bottom: 23px;
+          line-height: 1.3;
+        }
+      }
     }
 
     &__label {
       letter-spacing: .05em;
+
+      &_place {
+        &_order {
+          font-size: 12px;
+          margin-top: 29px;
+
+          &:first-of-type {
+            margin-top: -6px;
+          }
+        }
+      }
     }
 
     &__input {
       padding: 4px 0;
       margin-top: 10px;
+
+      &_place {
+        &_order {
+          font-size: 12px;
+          padding: 5px 0;
+          margin-top: 14px;
+        }
+      }
+
+      &_no-label {
+        margin-top: -12px;
+      }
     }
 
-    &__approval {
+    &__choose-field {
       justify-content: flex-start;
       margin-bottom: 16px;
       align-items: center;
+
+      &_place {
+        &_order {
+          margin-bottom: 9px;
+        }
+      }
 
       &-label {
         min-width: 210px;
         margin-left: 20px;
         flex-grow: 1;
+
+        &_place {
+          &_order {
+            font-size: 12px;
+            margin-left: 18px;
+          }
+        }
+      }
+    }
+
+    &__paragraph {
+      &_place {
+        &_to-address {
+          font-size: 12px;
+          margin-top: 20px;
+        }
+
+        &_price {
+          margin: 0;
+        }
+      }
+    }
+
+    &__delivery {
+      &_method {
+        &_to-address {
+          margin-bottom: 44px;
+        }
+      }
+
+      &-price {
+        margin-left: 60px;
+      }
+    }
+
+    &__container {
+      &_direction {
+        &_row {
+          flex-direction: column;
+          width: auto;
+        }
+      }
+    }
+
+    &__map {
+      margin: 0 -20px;
+      align-self: flex-end;
+    }
+
+    &__result {
+      font-size: 16px;
+    }
+
+    &__total {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    &__paragraph {
+      &_place {
+        &_result {
+          font-size: 12px;
+          margin: 18px 0 12px;
+        }
       }
     }
   }
@@ -293,10 +872,23 @@
 
 @media all and (max-width: 425px) {
   .form {
-    &__approval {
+    &__choose-field {
       &-label{
         min-width: auto;
         width: auto;
+      }
+    }
+
+    &__map {
+      width: 100vw;
+    }
+
+    &__container {
+      &_direction {
+        &_row {
+          margin-top: 60px;
+          align-items: flex-start;
+        }
       }
     }
   }
