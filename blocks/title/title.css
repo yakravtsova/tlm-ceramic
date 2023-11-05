@@ -6,7 +6,7 @@
 }
 .title_type_info {
   font-size: 28px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
 .title_type_second-line {
   font-size: 36px;
@@ -33,7 +33,7 @@
   }
   .title_type_info {
     font-size: 25px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
   .title_type_second-line {
     font-size: 32px;
@@ -94,6 +94,7 @@
   }
   .title_type_info {
     line-height: 1.15;
+    letter-spacing: 0.01em;
   }
   .title_type_second-line {
     font-size: 16px;

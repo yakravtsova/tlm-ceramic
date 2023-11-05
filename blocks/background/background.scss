@@ -56,6 +56,15 @@
       top: 415px;
       left: 0;
     }
+
+    &-calc {
+      width: 734px;
+      height: 718px;
+      position: absolute;
+      bottom: -120px;
+      right: 125px;
+      z-index: -1;
+    }
   }
 }
 
@@ -103,6 +112,13 @@
         height: 254px;
         top: 345px;
       }
+
+      &-calc {
+        width: 611px;
+        height: 598px;
+        bottom: -90px;
+        right: 120px;
+      }
     }
   }
 }
@@ -149,6 +165,13 @@
         width: 305px;
         height: 203px;
         top: 275px;
+      }
+
+      &-calc {
+        width: 490px;
+        height: 478px;
+        bottom: -80px;
+        right: 90px;
       }
     }
   }
@@ -253,6 +276,13 @@
 
       &-gray {
         display: none;
+      }
+
+      &-calc {
+        width: 249px;
+        height: 243px;
+        bottom: 5px;
+        right: 10px;
       }
     }
   }

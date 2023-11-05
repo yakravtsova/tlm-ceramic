@@ -67,6 +67,11 @@
       margin-left: 115px;
       margin-top: 10px;
     }
+
+    &_calculator {
+      padding: 0 64px;
+      height: 57px;
+    }
   }
 }
 
@@ -104,6 +109,11 @@
         padding: 0 50px;
         margin-left: 90px;
         margin-top: 11px;
+      }
+
+      &_calculator {
+        padding: 0 52px;
+        height: 48px;
       }
     }
 
@@ -151,6 +161,13 @@
         padding: 0 43px;
         margin-left: 70px;
         margin-top: 10px;
+      }
+
+      &_calculator {
+        padding: 0 36px;
+        height: 38px;
+        font-size: 13px;
+        letter-spacing: .02em;
       }
     }
 
@@ -203,6 +220,10 @@
         font-size: 14px;
         padding: 0 20px;
       }
+
+      &_calculator {
+        width: auto;
+      }
     }
   }
 }
@@ -244,6 +265,11 @@
         padding: 0 26px;
         margin-left: 28px;
       }
+
+      &_calculator {
+        font-size: 14px;
+        letter-spacing: .06em;
+      }
     }
   }
 }
@@ -274,6 +300,14 @@
         padding: 0 25px;
         margin-left: 0;
         margin-top: 24px;
+      }
+
+      &_calculator {
+        font-size: 14px;
+        letter-spacing: .06em;
+        padding: 0 16px;
+        height: 33px;
+        margin-top: auto;
       }
     }
   }

@@ -57,6 +57,10 @@
   margin-left: 115px;
   margin-top: 10px;
 }
+.button-yellow_place_calculator {
+  padding: 0 64px;
+  height: 57px;
+}
 
 @media all and (max-width: 1919px) {
   .button-yellow {
@@ -88,6 +92,10 @@
     padding: 0 50px;
     margin-left: 90px;
     margin-top: 11px;
+  }
+  .button-yellow_place_calculator {
+    padding: 0 52px;
+    height: 48px;
   }
   .button-yellow_color_white {
     margin-left: 30px;
@@ -126,6 +134,12 @@
     margin-left: 70px;
     margin-top: 10px;
   }
+  .button-yellow_place_calculator {
+    padding: 0 36px;
+    height: 38px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
   .button-yellow_color_white {
     margin-left: 15px;
   }
@@ -162,6 +176,9 @@
     font-size: 14px;
     padding: 0 20px;
   }
+  .button-yellow_place_calculator {
+    width: auto;
+  }
 }
 @media all and (max-width: 1000px) {
   .button-yellow_color_white {
@@ -191,6 +208,10 @@
     padding: 0 26px;
     margin-left: 28px;
   }
+  .button-yellow_place_calculator {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
 }
 @media all and (max-width: 750px) {
   .button-yellow {
@@ -213,6 +234,13 @@
     padding: 0 25px;
     margin-left: 0;
     margin-top: 24px;
+  }
+  .button-yellow_place_calculator {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 0 16px;
+    height: 33px;
+    margin-top: auto;
   }
 }
 @media all and (max-width: 425px) {
